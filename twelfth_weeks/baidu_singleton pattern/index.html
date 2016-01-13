@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>百度一下,你就知道</title>
+    <link type="text/css" rel="stylesheet" href="index.css"/>
+    <script src="jQuery/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!--头部-->
+        <header>
+            <nav>
+                <!--左侧天气预报-->
+                <div class="left">
+                    <ul class="weather">
+                        <!--天气预报-->
+                        <div class="weather-forecast">
+                            <div class="triangle"></div>
+                            <dl>
+                                <dt>
+                                    <a href="#" class="lightning"></a>
+                                    <a href="#" class="dt-a">海南省发布雷电橙色预警</a>
+                                </dt>
+                                <dd class="date">
+                                    <span class="solar-calendar">11月11日</span>
+                                    <span class="lunar-calendar">农历 十月初四</span>
+                                    <a href="#">未来七天天气</a>
+                                    <span class="set-up">设置</span>
+                                </dd>
+                                <dd class="detailed">
+                                    <ul>
+                                        <li class="same-dey">
+                                            <span>今天(周日)</span>
+                                            <img src="images/a1.jpg"/>
+                                            <p>
+                                                30℃<br/>
+                                                多云<br/>
+                                                东南风3~4级
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span>明天(周一)</span>
+                                            <img src="images/a1.jpg"/>
+                                            <p>
+                                                32℃<br/>
+                                                多云<br/>
+                                                东南风3-4级
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span>后天(周二)</span>
+                                            <img src="images/a1.jpg"/>
+                                            <p>
+                                                33~24℃<br/>
+                                                多云<br/>
+                                                东南风3-4级
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span>周三</span>
+                                            <img src="images/a1.jpg"/>
+                                            <p>
+                                                32~24℃<br/>
+                                                多云<br/>
+                                                东南风3-4级
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span>周四</span>
+                                            <img src="images/a1.jpg"/>
+                                            <p>
+                                                32~25℃<br/>
+                                                多云<br/>
+                                                东南风3-4级
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                        <li>
+                            <span>三亚：</span>
+                        </li>
+                        <li>
+                            <span class="weather-icon"></span>
+                        </li>
+                        <li>
+                            <span>30℃</span>
+                        </li>
+                        <li>
+                            <span class="good">优</span>
+                        </li>
+                        <li>
+                            <span>17</span>
+                        </li>
+                        <li>
+                            <span>|</span>
+                        </li>
+                    </ul>
+                    <ul class="left-link">
+                        <li>
+                            <a href="#">宝箱</a>
+                        </li>
+                        <li>
+                            <a href="#">换肤</a>
+                        </li>
+                        <li>
+                            <a href="#">消息</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>
+                            <a href="#">糯米</a>
+                        </li>
+                        <li>
+                            <a href="#">新闻</a>
+                        </li>
+                        <li>
+                            <a href="#">hao123</a>
+                        </li>
+                        <li>
+                            <a href="#">地图</a>
+                        </li>
+                        <li>
+                            <a href="#">视频</a>
+                        </li>
+                        <li>
+                            <a href="#">贴吧</a>
+                        </li>
+                        <li class="con">
+                            <a href="#">唐奇隆</a>
+                            <div class="box">
+                                <div class="triangle posi"></div>
+                                <div class="menu">
+                                    <a href="#">我的VIP</a>
+                                    <a href="#">个人中心</a>
+                                    <a href="#">账号设置</a>
+                                    <a href="#">意见反馈</a>
+                                    <a href="#">反馈</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="con">
+                            <a href="#">设置</a>
+                            <div class="box">
+                                <div class="triangle posi"></div>
+                                <div class="menu height">
+                                    <a href="#">搜索设置</a>
+                                    <a href="#">高级搜索</a>
+                                    <a href="#">关闭预测</a>
+                                    <a href="#">搜索历史</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="product">
+                            更多产品
+                            <ul class="drop-down">
+                                <li>
+                                    <img src="images/baidu-icon.png"/>
+                                    <span>音乐</span>
+                                </li>
+                                <li>
+                                    <img src="images/tushu-icon.png"/>
+                                    <span>图片</span>
+                                </li>
+                                <li>
+                                    <img src="images/zhidao-icon.png"/>
+                                    <span>知道</span>
+                                </li>
+                                <li>
+                                    <img src="images/wenku-icon.png"/>
+                                    <span>文库</span>
+                                </li>
+                                <li>
+                                    <img src="images/bang-icon.png"/>
+                                    <span>风云榜</span>
+                                </li>
+                                <li>
+                                    <img src="images/tuiguan-icon.png"/>
+                                    <span>百度推广</span>
+                                </li>
+                                <a href="#">更多产品>></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--LOGO及搜索-->
+        <div class="logo-search">
+            <div class="logo">
+                <img src="images/logo_white.png"/>
+            </div>
+            <div class="search">
+                <input type="text" class="search-text"/>
+                <button type="button" class="search-button">百度一下</button>
+            </div>
+        </div>
+        <!--主要内容-->
+        <div class="body-con">
+            <!--导航-->
+            <div class="nav-con">
+                <div class="nav">
+                    <span class="care">
+                    <i class="care-icon"></i>
+                    我的关注
+                </span>
+                    <span class="span-1">推荐</span>
+                    <span>导航</span>
+                    <span>购物</span>
+                    <span>视频</span>
+                </div>
+                <div class="fill"></div>
+                <div class="icon-box">
+                    <span class="icon"></span>
+                </div>
+            </div>
+            <div class="nav-click">
+                <!--我的关注-->
+                <div class="care-body none div">
+                    <!--导航-->
+                    <nav>
+                    <span class="title-con">
+                        <i class="mine-icon"></i>
+                        我的导航
+                    </span>
+                        <div class="care-nav-con">
+                            <span class="usual">添加</span>
+                            <span class="usual">编辑</span>
+                        <span class="pattern">
+                            <span class="pattern-icon"></span>
+                            分类显示
+                        </span>
+                        <span class="pattern">
+                            <span class="pattern-icon"></span>
+                            返利模式
+                        </span>
+                            <span class="top">置顶</span>
+                        </div>
+                    </nav>
+                    <!--网页链接-->
+                    <div class="nav-st-con">
+                        <ul class="nav-st">
+                            <li>
+                                <a href="#">
+                                    <img src="images/baidu.png"/>
+                                    百度贴吧
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/taobao.png">
+                                    淘宝网
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/xinlang.png">
+                                    新浪微博
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/yamaxun.png">
+                                    亚马逊
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/hao123.png">
+                                    hao123
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav-st">
+                            <li>
+                                <a href="#">
+                                    <img src="images/jingdong.png"/>
+                                    京东商城
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/youku.png">
+                                    优酷网
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/wangyi.png">
+                                    163邮箱
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/kongjian.png">
+                                    qq空间
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/tianmao.png">
+                                    淘宝商城
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="custom">
+                        <span class="custom-icon"></span>
+                        <span>自定义</span>
+                    </div>
+                    <div class="bottom">
+                        <span></span>
+                    </div>
+                </div>
+                <!--推荐-->
+                <div class="news-body div">
+                    <!--头条-->
+                    <div class="img-box">
+                        <div>
+                            <div class="img-tit">
+                                <img src="images/xinwei.jpg"/>
+                                <div class="text-box">
+                                    <h1>
+                                        <a href="#">复仇！法国出动12架飞机空袭IS</a>
+                                    </h1>
+                                    <p>巴黎11月13日遭受连环恐袭，129人丧生，IS声称负责</p>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/kaihui.jpg"/>
+                                        <span>奥巴马普京密议打击IS</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/baotu.jpg"/>
+                                        <span>暴徒用PS4机掩护</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/tongji.jpg"/>
+                                        <span>警方公布嫌疑人头像</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/xiongdi.jpg"/>
+                                        <span>三名恐怖分子为亲兄弟</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--分割线-->
+                        <div class="division">
+                            <div class="fill-left"></div>
+                            <div class="divi-text">
+                                <span></span>
+                                以下信息根据您的内容推荐
+                            </div>
+                            <div class="fill-right"></div>
+                        </div>
+                    </div>
+                    <!--新闻总览-->
+                    <div class="news-con">
+                        <div class="news-nav-box">
+                            <a href="#" class="news-title">实时热点</a>
+                            <a href="#" class="replacement">
+                                <span class="replacement-icon"></span>
+                                <span>换一换</span>
+                            </a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">凤姐美国近照曝光</a>
+                            </li>
+                            <li>
+                                <a href="#">刘嘉玲与康康亲亲</a>
+                            </li>
+                            <li>
+                                <a href="#">李可梁画拍1.8亿</a>
+                            </li>
+                            <li>
+                                <a href="#">奥运选手郭洁去世</a>
+                            </li>
+                            <li>
+                                <a href="#">范玮琪晒娃再遭骂</a>
+                            </li>
+                            <li>
+                                <a href="#">法国战机空袭IS</a>
+                            </li>
+                            <li>
+                                <a href="#">广州现外籍男乞丐</a>
+                            </li>
+                            <li>
+                                <a href="#">世界最性感小矮人</a>
+                            </li>
+                            <li>
+                                <a href="#">变形男子生下女儿</a>
+                            </li>
+                            <li>
+                                <a href="#">李亚鹏醉酒</a>
+                            </li>
+                            <li>
+                                <a href="#">撞民房淡定打电话</a>
+                            </li>
+                            <li>
+                                <a href="#">韩爆发严重示威</a>
+                            </li>
+                            <li>
+                                <a href="#">男子靠手机挡子弹</a>
+                            </li>
+                            <li>
+                                <a href="#">凯特王妃暴瘦</a>
+                            </li>
+                            <li>
+                                <a href="#">姑娘喝两斤白酒</a>
+                            </li>
+                            <li>
+                                <a href="#">朱茵晒自拍</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <span></span>
+                    </div>
+                </div>
+                <!--导航-->
+                <div class="link-body none div">
+                    <div class="link-box">
+                        <a>
+                            <img src="images/nuomi.jpg">
+                        </a>
+                        <a>
+                            <img src="images/jingdongshangcheng.jpg">
+                        </a>
+                        <a>
+                            <img src="images/yihaodian.jpg">
+                        </a>
+                        <a>
+                            <img src="images/suning.jpg">
+                        </a>
+                        <a>
+                            <img src="images/weipinhui.jpg">
+                        </a>
+                        <a>
+                            <img src="images/dangdang.jpg">
+                        </a>
+                        <a>
+                            <img src="images/taobaowang.jpg">
+                        </a>
+                        <a>
+                            <img src="images/58tongcheng.jpg">
+                        </a>
+                        <a>
+                            <img src="images/xinlangwang.jpg">
+                        </a>
+                        <a>
+                            <img src="images/souhu.jpg">
+                        </a>
+                        <a>
+                            <img src="images/wangyiwang.jpg">
+                        </a>
+                        <a>
+                            <img src="images/guangming.jpg">
+                        </a>
+                        <a>
+                            <img src="images/baiduVP.jpg">
+                        </a>
+                        <a>
+                            <img src="images/weibo.jpg">
+                        </a>
+                        <a>
+                            <img src="images/youkuwang.jpg">
+                        </a>
+                        <a>
+                            <img src="images/qq.jpg">
+                        </a>
+                        <a>
+                            <img src="images/bilibili.jpg">
+                        </a>
+                        <a>
+                            <img src="images/aiqiyi.jpg">
+                        </a>
+                        <a>
+                            <img src="images/windows.jpg">
+                        </a>
+                        <a>
+                            <img src="images/4399.jpg">
+                        </a>
+                        <a>
+                            <img src="images/zhilian.jpg">
+                        </a>
+                        <a>
+                            <img src="images/qidian.jpg">
+                        </a>
+                        <a>
+                            <img src="images/dazhong.jpg">
+                        </a>
+                        <a>
+                            <img src="images/xiecheng.jpg">
+                        </a>
+                    </div>
+                    <div class="bottom">
+                        <span></span>
+                    </div>
+                </div>
+                <!--购物-->
+                <div class="shop-body none div">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/mingde.jpg">
+                                <span>已售 19804</span>
+                            </a>
+                            <div>
+                                <a href="#">铭德自助餐55元</a>
+                                <span>￥48</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/xinyuan.jpg">
+                                <span>已售 9156</span>
+                            </a>
+                            <div>
+                                <a href="#">欣园8英寸蛋糕1个</a>
+                                <span>￥88</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/pisa.jpg">
+                                <span>已售 1118</span>
+                            </a>
+                            <div>
+                                <a href="#">彼乐夫6寸披萨4选1</a>
+                                <span>￥10.8</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/mingde.jpg">
+                                <span>已售 19804</span>
+                            </a>
+                            <div>
+                                <a href="#">铭德自助餐55元</a>
+                                <span>￥48</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/xinyuan.jpg">
+                                <span>已售 9156</span>
+                            </a>
+                            <div>
+                                <a href="#">欣园8英寸蛋糕1个</a>
+                                <span>￥88</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/pisa.jpg">
+                                <span>已售 1118</span>
+                            </a>
+                            <div>
+                                <a href="#">彼乐夫6寸披萨4选1</a>
+                                <span>￥10.8</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/mingde.jpg">
+                                <span>已售 19804</span>
+                            </a>
+                            <div>
+                                <a href="#">铭德自助餐55元</a>
+                                <span>￥48</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/xinyuan.jpg">
+                                <span>已售 9156</span>
+                            </a>
+                            <div>
+                                <a href="#">欣园8英寸蛋糕1个</a>
+                                <span>￥88</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="bottom">
+                        <span></span>
+                    </div>
+                </div>
+                <!--视频-->
+                <div class="video-body none div">
+                    <ul>
+                        <li>
+                            <a>
+                                <img src="images/dakaxiu.jpg">
+                            </a>
+                            <span class="img-icon"></span>
+                            <span class="date">04-17期</span>
+                            <div class="operation">
+                                <span class="follow"></span>
+                                <span class="del"></span>
+                            </div>
+                            <div class="text">
+                                <a href="#">百变大咖秀</a>
+                            <span>
+                                <span class="stars-grey"></span>
+                                <span class="stars-withe"></span>
+                                7.4
+                            </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/huoying.jpg">
+                            </a>
+                            <span class="img-icon"></span>
+                            <div class="operation">
+                                <span class="follow"></span>
+                                <span class="del"></span>
+                            </div>
+                            <div class="text">
+                                <a href="#">火影忍者</a>
+                            <span>
+                                <span class="stars-grey"></span>
+                                <span class="stars-withe"></span>
+                                8.5
+                            </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/tiantian.jpg">
+                            </a>
+                            <span class="date">01:56</span>
+                            <div class="operation">
+                                <span class="follow"></span>
+                                <span class="del"></span>
+                            </div>
+                            <div class="text">
+                                <a href="#">
+                                <span>
+                                    《天天向上》萌娃齐舞小苹果举手投足间的萌
+                                </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/mengwa.jpg">
+                            </a>
+                            <span class="date">00:37</span>
+                            <div class="operation">
+                                <span class="follow"></span>
+                                <span class="del"></span>
+                            </div>
+                            <div class="text">
+                                <a href="#">
+                                <span>
+                                    萌神姐姐砸场天天向上 grace兄妹现场玩high
+                                </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/ziran.jpg">
+                            </a>
+                            <span class="date">01:03</span>
+                            <div class="operation">
+                                <span class="follow"></span>
+                                <span class="del"></span>
+                            </div>
+                            <div class="text">
+                                <a href="#">
+                                <span>
+                                    小车自燃浓烟滚滚 司机及时下车无大碍
+                                </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/zuqiu.jpg">
+                            </a>
+                            <span class="date">01:50</span>
+                            <div class="operation">
+                                <span class="follow"></span>
+                                <span class="del"></span>
+                            </div>
+                            <div class="text">
+                                <a href="#">
+                                <span>
+                                    欧预赛-亚尔莫连科破门 乌克兰2-0斯洛文尼亚
+                                </span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="bottom">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jQuery/index.js"></script>
+</body>
+</html>
