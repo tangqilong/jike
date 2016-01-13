@@ -1,0 +1,366 @@
+/*¶¯»­*/
+
+#left-eye{
+    -webkit-animation-name: animation;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+}
+
+#right-eye{
+    -webkit-animation-name: animation;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 1s;
+}
+
+#left-eye-orbit{
+    -webkit-animation-name: animation1;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 2s;
+}
+
+#right-eye-orbit{
+    -webkit-animation-name: animation1;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 2s;
+}
+
+#left-arm{
+    -webkit-animation-name: animation2;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 2s;
+    -webkit-transform-origin: 300px 50px;
+}
+
+#animation{
+    -webkit-animation-name: animation3;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 2s;
+    -webkit-transform-origin: 750px 800px;
+}
+
+@-webkit-keyframes animation{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(-20px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+@-webkit-keyframes animation1{
+    50%{
+        transform: scaley(0);
+    }
+}
+
+@-webkit-keyframes animation2{
+    50%{
+        transform: rotate(30deg);
+    }
+}
+
+
+@-webkit-keyframes animation3{
+    0%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(-30deg)
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+}
+
+.con{
+    width: 1500px;
+    height: 1200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -750px;
+    margin-top: -600px;
+    background-image: url("tupian/beijing.jpg");
+    background-size: cover;
+}
+
+.animation{
+    position: relative;
+    top: 100px;
+}
+
+.head{
+    width: 400px;
+    height: 800px;
+    background-color: yellow;
+    border-radius: 65px;
+    position: relative;
+    left: 40%;
+    z-index: 1;
+}
+
+/*×óÑÛ*/
+
+.left-eye{
+    width: 70px;
+    height: 70px;
+    background-color: #000000;
+    position: relative;
+    left: 53px;
+    border-radius: 35px;
+    top: 35px;
+    border: 1px solid #000000;
+    z-index: 1;
+}
+
+.left-eye-orbit{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    left: 58px;
+    border-radius: 75px;
+    top: 65px;
+    border: 1px solid #000000;
+    z-index: 4;
+    border-right: 1px solid white;
+}
+
+/*ÑÛ¾µÍÈ*/
+
+.Eye-leg{
+    width: 400px;
+    height: 30px;
+    background-color: white;
+    position: relative;
+    top: 126px;
+    border: 2px solid #000000
+}
+
+/*ÓÒÑÛ*/
+
+.right-eye{
+    width: 70px;
+    height: 70px;
+    background-color: #000000;
+    position: relative;
+    left: 66px;
+    border-radius: 35px;
+    top: 35px;
+    border: 1px solid #000000;
+    z-index: 2;
+}
+
+.right-eye-orbit{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    left: 210px;
+    border-radius: 75px;
+    top: 65px;
+    border: 1px solid #000000;
+    z-index: 3;
+    border-left: 1px solid white;
+}
+
+/*×ì*/
+
+.mouth{
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    position: relative;
+    top: 256px;
+    left: 47px;
+}
+
+/*¼ç´ø*/
+
+.Strap{
+    width: 330px;
+    height: 20px;
+    position: relative;
+    top: 332px;
+    left: 50%;
+    margin-left: -160px;
+    border-radius: 10px;
+    background-color: #317ef3;
+}
+
+/*×ó¼ç*/
+
+.left-shoulder{
+    background-color: #89f3a9;
+    width: 100px;
+    height: 20px;
+    position: relative;
+    top: 324px;
+    left: -6px;
+    border-radius: 10px;
+    transform: rotate(30deg);
+}
+
+/*ÓÒ¼ç*/
+
+.right-shoulder{
+    background-color: #89f3a9;
+    width: 100px;
+    height: 20px;
+    position: relative;
+    top: 303px;
+    left: 306px;
+    border-radius: 10px;
+    transform: rotate(-30deg);
+}
+
+/*×ó¿Ú´ü*/
+
+.left-Pocket{
+    width: 60px;
+    height: 100px;
+    background-color: darkblue;
+    position: relative;
+    top: 293px;
+    transform: skewy(31deg);
+}
+
+/*ÓÒ¿Ú´ü*/
+
+.right-Pocket{
+    width: 60px;
+    height: 100px;
+    background-color: darkblue;
+    position: relative;
+    top: 192px;
+    left: 340px;
+    transform: skewy(-31deg);
+}
+
+/*±êÖ¾*/
+
+img{
+    position: relative;
+    left: 50%;
+    margin-left: -64px;
+    top: 167px;
+}
+
+/*×ó½Å*/
+
+.left-leg{
+    height: 84px;
+    width: 70px;
+    border: 1px solid #000000;
+    position: relative;
+    left: 46%;
+    background-color: yellow;
+}
+
+.left-food{
+    width: 100px;
+    height: 50px;
+    border: 1px solid #000000;
+    position: relative;
+    top: 46px;
+    left: -19px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    background-color: yellow;
+    z-index: 1;
+}
+
+/*ÓÒ½Å*/
+
+.right-leg{
+    height: 84px;
+    width: 70px;
+    border: 1px solid #000000;
+    background-color: yellow;
+    position: relative;
+    left: 55%;
+    top: -84px;
+}
+
+.right-food{
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: 46px;
+    left: -19px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border: 1px solid #000000;
+    background-color: yellow;
+}
+
+/*×óÊÖ*/
+
+.left-arm{
+    position: relative;
+    left: 21%;
+    top: -497px;
+}
+
+.left-hand{
+    width: 180px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: yellow;
+    position: relative;
+    transform: rotate(-38deg);
+    left: 146px;
+}
+
+.left-hand1{
+    width: 255px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: yellow;
+    position: relative;
+    transform: rotate(220deg);
+    top: -133px;
+    left: 13px;
+}
+
+/*ÓÒÊÖ*/
+
+.right-arm{
+    position: relative;
+    left: 64%;
+    top: -726px;
+}
+
+.right-hand{
+    width: 255px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: yellow;
+    position: relative;
+    transform: rotate(-38deg);
+    left: 56px;
+    top: -18px;
+    z-index: 1;
+}
+
+.right-hand1{
+    width: 180px;
+    height: 100px;
+    border-radius: 100px;
+    position: relative;
+    transform: rotate(211deg);
+    background-color: yellow;
+    top: -99px;
+}
