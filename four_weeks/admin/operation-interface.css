@@ -1,0 +1,105 @@
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*顶部*/
+
+.top-logo{
+    background-image: url("tupian/top.png");
+    height: 90px;
+}
+
+.huayu-logo{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 375px;
+}
+
+/*导航栏*/
+
+.navbar-default{
+    background-image: url("tupian/nav.png");
+}
+
+.navbar-default a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-left{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-right{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+/*菜单列表*/
+
+.row{
+    margin-top: -21px;
+}
+
+.col-md-2{
+    background-color: #363330;
+    height: 450px;
+    overflow-y: overlay;
+}
+
+.row-ul{
+    margin-left: -33px;
+}
+
+.row-ul ul li a{
+    background-image: url("tupian/linkbeijing.png");
+    height: 35px;
+    width: 207px;
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 5px;
+    line-height: 35px;
+}
+
+.row-ul ul li a:hover{
+    text-decoration: none;
+}
+
+.row-ul ul li div dl dd{
+    color: #fff;
+    cursor: pointer;
+    line-height: 30px;
+    border-bottom: 2px solid #5c5c5c;
+    font-size: 12px;
+}
+
+.ul-icon{
+    line-height: 0;
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 0 none;
+    cursor: pointer;
+    outline: none;
+    background-repeat: no-repeat;
+    background-image: url("tupian/icon1.png");
+}
+
+/*尾部*/
+
+.col-md-10 table tbody tr td{
+    color: gray;
+    font-size: 13px;
+}
+
+.foot-botton{
+    margin-top: -10px;
+}
+

@@ -1,0 +1,129 @@
+/*ICON字体*/
+@font-face {
+    font-family: icomoon;
+    src: url('fonts/icomoon.eot?gg81q3');
+    src: url('fonts/icomoon.eot?gg81q3#iefix') format("embedded-opentype");
+    src: url('fonts/icomoon.ttf?gg81q3') format("truetype");
+    src: url('fonts/icomoon.svg?gg81q3#icomoon') format("svg");
+    src: url('fonts/icomoon.woff?gg81q3') format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon{
+    font-family: icomoon;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-circle-up:before {
+    content: "\e609";
+    font-size: 50px;
+    position: fixed;
+    top: 585px;
+    left: 130px;
+    opacity: 0.6;
+}
+/*BODY及容器*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+}
+
+/*左侧导航菜单*/
+
+.container .menu{
+    background-color: #fff;
+    float: left;
+    border-right: 5px solid #5d5d5d;
+    display: block;
+    min-width: 310px;
+    min-height: 610px;
+}
+
+.container .menu dl{
+    padding-right: 15px;
+}
+
+.container .menu dl dt{
+    height: 40px;
+    min-height: 40px;
+}
+
+.container .menu dl dt a{
+    text-decoration: none;
+    color: #000;
+    font-size: 23px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.container .menu dl dd{
+    height: 30px;
+    min-height: 30px;
+}
+
+.container .menu dl dd a{
+    text-decoration: none;
+    line-height: 30px;
+    color: #474747;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*右侧主要内容*/
+
+.container .content{
+    background-color: #fff;
+    min-width: 910px;
+}
+
+/*标题*/
+
+.container .content .title-box .content-title{
+    display: table;
+    margin: 0 auto;
+}
+
+.container .content .title-box .content-title h1{
+    line-height: 100px;
+}
+
+/*分割线*/
+
+.container .content .content-division{
+    background: -webkit-gradient(linear,10% 10%,100% 100%,color-stop(0.14, #5d5d5d),color-stop(0.5, #557e76),color-stop(1, #cc2bba));
+    width: 100%;
+    height: 5px;
+}
+
+/*主要内容*/
+
+.content .content-text dl{
+    padding-left: 330px;
+    padding-right: 15px;
+    border-bottom: 3px dashed #808080;
+}
+
+.content .content-text dl dt{
+    border-bottom: 1px dotted #808080;
+}
+
+.content .content-text dl dd p{
+    line-height: 25px;
+    text-indent: 30px;
+}
+
+.content .content-text dl dd ul,ol{
+    margin-left: 20px;
+}
+
+.content .content-text dl dd ul,ol li{
+    line-height: 25px;
+}

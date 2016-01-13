@@ -1,0 +1,700 @@
+/*屏幕适配*/
+
+@media only screen and (max-width: 375px) {
+    #text{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #container{
+        min-width: 310px;
+    }
+    #text{
+        width: 70%;
+    }
+    .text-box .text-nav .text-nav-a{
+        margin-right: 9%;
+    }
+    .centent-link-a{
+        width: 21%;
+    }
+    .text-box .text-nav .nav-con .none-text ul .none-text-li{
+        margin-right: 9%;
+    }
+}
+
+@media only screen and (min-width: 414px){
+    #text{
+        width: 71%;
+    }
+    .text-box .text-nav .text-nav-a{
+        margin-right: 11%;
+    }
+    .text-box .text-nav .nav-con .none-text ul .none-text-li{
+        margin-right: 11%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #text{
+        width: 88%;
+    }
+    .text-box .text-nav .text-nav-a{
+        margin-right: 15%;
+    }
+}
+
+/*字体*/
+
+@font-face {
+    font-family: icomoon;
+    src: url('fonts/fonts/icomoon.eot?vr2hl');
+    src: url('fonts/fonts/icomoon.eot?vr2hl#iefix') format("embedded-opentype");
+    src: url('fonts/fonts/icomoon.svg?vr2h1') format("svg");
+    src: url('fonts/fonts/icomoon.ttf?vr2h1') format("truetype");
+    src: url('fonts/fonts/icomoon.woff?vr2h1') format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon{
+    font-family: icomoon;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*内容*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.html{
+    font-size: 62.5%;
+}
+
+.container{
+    min-width: 350px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/*头部天气预报及用户登录*/
+
+.top{
+    width: 100%;
+}
+
+/*天气预报*/
+
+.top .top-nav .weather{
+    cursor: pointer;
+}
+
+.top .top-nav .weather span{
+    float: left;
+    font-size: 2.5rem;
+    color: #808080;
+}
+
+.top .top-nav .weather .weather-img{
+    float: left;
+    border-right: 1px solid #808080;
+}
+
+.top .top-nav .weather .weather-img img{
+    width: 25px;
+    margin-top: 16px;
+    margin-left: -30px;
+    padding-right: 10px;
+}
+
+.top .top-nav .weather .weather-p p{
+    font-size: 1rem;
+    line-height: 0;
+    margin-left: 95px;
+    color: #808080;
+}
+
+.top .top-nav .weather .weather-p .p1{
+    padding-top: 16px;
+}
+
+/*登陆*/
+
+.login{
+    float: right;
+    margin-top: -45px;
+}
+
+.login a{
+    text-decoration: none;
+}
+
+.icon-user{
+    color: #808080;
+    font-size: 2rem;
+}
+
+.icon-user:before {
+    content: "\e602";
+}
+
+/*搜索栏及LOGO*/
+
+.text-box{
+    width: 100%;
+    min-width: 290px;
+}
+
+/*LOGO*/
+
+.text-box .logo{
+    width: 175px;
+    margin: auto;
+    margin-top: 35px;
+}
+
+.text-box .logo img{
+    width: 175px;
+}
+
+/*搜索框*/
+.text-box .search-box{
+    width: 100%;
+    margin-top: 10px;
+    position: absolute;
+    min-width: 290px;
+}
+
+.text-box .search-box div .text{
+    width: 66%;
+    height: 36px;
+    float: left;
+    padding-left: 5px;
+}
+
+.text-box .search-box div .submit{
+    width: 80px;
+    height: 42px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #808080;
+}
+
+/*导航条*/
+
+.text-box .text-nav{
+    margin-top: 70px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.text-box .text-nav a{
+    text-decoration: none;
+    float: left;
+    margin-right: 10%;
+}
+
+.text-box .text-nav a p{
+    font-size: 0.5rem;
+    color: #808080;
+}
+
+.text-box .text-nav .nav-con p{
+    font-size: 0.5rem;
+    color: #808080;
+}
+
+.text-box .text-nav .nav-con .none-text ul{
+    padding-left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.text-box .text-nav .nav-con .none-text ul li{
+    float: left;
+    list-style: none;
+    margin-right: 10%;
+}
+
+.text-box .text-nav .nav-con .none-text ul li a{
+    margin-right: 0;
+}
+
+.text-box .text-nav .nav-con .icon-circle-up{
+    display: none;
+}
+
+.text-box .text-nav .nav-con:hover .icon-circle-up{
+    display: block;
+}
+
+.text-box .text-nav .nav-con .none-text{
+    display: none;
+}
+
+.text-box .text-nav .nav-con:hover .none-text{
+    display: block;
+}
+
+.text-box .text-nav .nav-con:hover .icon-circle-down{
+    display: none;
+}
+
+/*导航条ICON字体*/
+
+.icon-news:before {
+    content: "\e604";
+    font-size: 1rem;
+    color: #808080;
+}
+
+.icon-book:before {
+    content: "\f007";
+    font-size: 1rem;
+    color: #808080;
+}
+
+.icon-youtube2:before {
+    content: "\e601";
+    font-size: 1rem;
+    color: #808080;
+}
+
+.icon-food:before {
+    content: "\e605";
+    font-size: 1rem;
+    color: #808080;
+}
+
+.icon-location:before {
+    content: "\e603";
+    font-size: 1rem;
+    color: #808080;
+}
+
+.icon-circle-down:before {
+    content: "\e600";
+    font-size: 1rem;
+    color: #808080;
+}
+
+.icon-circle-up:before {
+    content: "\e609";
+    font-size: 1rem;
+    color: #808080;
+}
+
+.icon-file-text:before {
+    content: "\e606";
+    font-size: 1rem;
+    color: #808080;
+}
+
+.icon-file-picture:before {
+    content: "\e607";
+    font-size: 1rem;
+    color: #808080;
+}
+
+.icon-world:before {
+    content: "\e60a";
+    font-size: 1rem;
+    color: #808080;
+}
+
+.icon-earth:before {
+    content: "\e608";
+    font-size: 1rem;
+    color: #808080;
+}
+
+/*常用网址字体*/
+
+.icon-ellipsis:before {
+    content: "\f09a";
+    font-size: 1rem;
+    color: #808080;
+    cursor: pointer;
+}
+
+.icon-link:before {
+    content: "\e608";
+    font-size: 1rem;
+    color: #6fb5e9;
+}
+
+.icon-plus:before {
+    content: "\e60b";
+}
+
+/*常用网址*/
+
+.nav{
+    border: 1px solid #808080;
+    padding: 10px 10px 10px 10px;
+    min-width: 290px;
+}
+
+/*常用网址标题*/
+
+.nav .nav-title{
+    width: 100%;
+}
+
+.nav .nav-title .title-left{
+    float: left;
+}
+
+.nav .nav-title .title-left .icon-link{
+    float: left;
+}
+
+.nav .nav-title .title-left h2{
+    font-size: 1rem;
+    font-weight: normal;
+    color: #808080;
+    float: left;
+    margin-top: -1px;
+    margin-left: 5px;
+}
+
+.nav .nav-title .title-right{
+    float: right;
+}
+
+/*网址标签*/
+
+.centent-box{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.centent-box .centent-link a{
+    display: inline-block;
+    width: 23%;
+    text-align: center;
+    color: #262626;
+    line-height: 3rem;
+    text-decoration: none;
+}
+
+.centent-box .centent-link .link-1{
+    color: #808080;
+}
+
+/*新闻字体*/
+
+.icon-hotspot:before {
+    content: "\e606";
+    color: #7db164;
+    font-size: 1rem;
+}
+
+.icon-spinner11:before {
+    content: "\e60d";
+    font-size: 1rem;
+    color: #808080;
+}
+
+/*实时新闻标题*/
+
+.news{
+    margin-top: 10px;
+    height: 140px;
+}
+
+.nav .nav-title .title-left .icon-hotspot{
+    float: left;
+}
+
+.nav .nav-title .title-right p{
+    margin-top: 0;
+    margin-right: 10px;
+    padding: 0 10px;
+    border-right: 1px solid #808080;
+    font-size: 0.9rem;
+    float: left;
+}
+
+.nav .nav-title .title-right i{
+    float: left;
+}
+
+/*新闻内容*/
+
+.nav .link-news{
+    width: 100%;
+}
+
+.nav .link-news ul{
+    margin-top: 30px;
+    list-style: none;
+    margin-left: -40px;
+}
+
+.nav .link-news ul li{
+    width: 50%;
+    float: left;
+    line-height: 2.5rem;
+}
+
+.nav .link-news ul li a{
+    color: #262626;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/*生活服务字体*/
+
+.icon-location2:before {
+    content: "\e60c";
+    color: #60ade8;
+    font-size: 1rem;
+    float: left;
+}
+
+.icon-target:before {
+    content: "\e60f";
+    color: #808080;
+    font-size: 1rem;
+}
+
+.icon-film:before {
+    content: "\e610";
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.icon-stackoverflow:before {
+    content: "\e617";
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.icon-github3:before {
+    content: "\e616";
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.icon-clear-formatting:before {
+    content: "\e615";
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.icon-library:before {
+    content: "\e611";
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.icon-spoon-knife:before {
+    content: "\e614";
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.icon-microphone:before {
+    content: "\e612";
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.icon-banknote:before {
+    content: "\e613";
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+/*生活服务定位*/
+
+.location{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.location .location-left span{
+    display: block;
+    min-width: 210px;
+    font-size: 1rem;
+}
+
+.location .location-right button{
+    display: block;
+    float: right;
+    margin-top: -21px;
+}
+
+/*服务图标*/
+
+.life{
+    height: 205px;
+    margin-top: 10px;
+}
+
+.life .life-link ul{
+    list-style: none;
+}
+
+.life .life-link ul li{
+    width: 25%;
+    float: left;
+}
+
+.life .life-link ul li a{
+    display: block;
+    width: 42px;
+    text-align: center;
+    text-decoration: none;
+    color: #262626;
+}
+
+.life .life-link ul li a i{
+    display: block;
+    background-color: #b493db;
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    text-align: center;
+    line-height: 42px;
+}
+
+.life .life-link ul li a p{
+    margin-top: 3px;
+}
+
+.life .life-link ul li a .icon-color2{
+    background-color: #ff6fbf;
+}
+
+.life .life-link ul li a .icon-color3{
+    background-color: #ff6b70;
+}
+
+.life .life-link ul li a .icon-color4{
+    background-color: #93a4b3;
+}
+
+.life .life-link ul li a .icon-color5{
+    background-color: #6f99de;
+}
+
+.life .life-link ul li a .icon-color6{
+    background-color: #ffa868;
+}
+
+.life .life-link ul li a .icon-color7{
+    background-color: #b493db;
+}
+
+.life .life-link ul li a .icon-color8{
+    background-color: #70d0a1;
+}
+
+/*展示全部*/
+
+.exhibition-box{
+    border-top: none;
+    text-align: center;
+}
+
+.icon-chevron-down:before {
+    content: "\f0a3";
+    color: #808080;
+}
+
+/*管理我的首页*/
+
+.icon-cog:before {
+    content: "\e60e";
+    color: #0058d2;
+    font-size: 0.8rem;
+}
+
+.admin-box{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.admin-box .admin span{
+    color: #0058d2;
+}
+
+/*底部链接*/
+
+.icon-fire:before {
+    content: "\e618";
+    color: #ff0000;
+    font-size: 0.5rem;
+}
+
+.icon-chevron-right:before {
+    content: "\f078";
+    color: #808080;
+    float: right;
+}
+
+.bottom-box{
+    width: 100%;
+    min-width: 290px;
+}
+
+.bottom-box ul{
+    list-style: none;
+    margin-left: -45px;
+}
+
+.bottom-box ul li{
+    line-height: 20px;
+}
+
+.bottom-box ul li a{
+    text-decoration: none;
+    font-size: 0.5rem;
+    color: #555;
+}
+
+/*底部按钮*/
+
+.bottom-box .foot{
+    padding-bottom: 15px;
+}
+
+.bottom-box .foot .btn-link a{
+    display: block;
+    width: 45%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.5rem;
+    text-decoration: none;
+    color: #555;
+    border: 1px solid #808080;
+    text-align: center;
+}
+
+.bottom-box .foot .btn-link .btn-1{
+    float: left;
+}
+
+.bottom-box .foot .btn-link .btn-2{
+    float: right;
+}
+
+/*底部声明*/
+
+.bottom-box .foot .foot-link{
+    color: #aaa;
+    font-size: 0.5rem;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 45px;
+}
