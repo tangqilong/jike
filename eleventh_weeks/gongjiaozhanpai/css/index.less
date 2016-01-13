@@ -1,0 +1,503 @@
+.size(@width, @height, @position) {
+    position: @position;
+    width: @width;
+    height: @height;
+}
+
+.topLeft(@top, @left) {
+    top: @top;
+    left: @left;
+}
+
+.topRight(@top, @right) {
+    top: @top;
+    right: @right;
+}
+
+.bottomLeft(@bottom, @left) {
+    bottom: @bottom;
+    left: @left;
+}
+
+.bottomRight(@bottom, @right) {
+    bottom: @bottom;
+    right: @right;
+}
+
+.border(@top, @right, @bottom, @left) {
+    border-top: @top;
+    border-right: @right;
+    border-bottom: @bottom;
+    border-left: @left;
+}
+
+.container {
+    .size(100%, 770px, relative);
+    background: url("../images/beijing.jpg") no-repeat;
+    background-size: cover;
+}
+
+.box {
+    .size(400px, 500px, relative);
+    top: 250px;
+    left:350px;
+}
+
+//耳朵
+
+.ears() {
+    .size(50px, 50px, absolute);
+}
+
+.part_1(@angle) {
+    .size(15px, 10px, absolute);
+    transform: rotate(@angle);
+    background-color: #818181;
+    bottom: 0;
+}
+
+.part_2(@angle, @bottom) {
+    .size(20px, 10px, absolute);
+    transform: rotate(@angle);
+    bottom: @bottom;
+    background-color: #818181;
+    border-radius: 10px;
+}
+
+.part_3(@angle, @left) {
+    .size(0, 0, absolute);
+    .border(none, 10px solid transparent, 40px solid #818181, 10px solid transparent);
+    transform: rotate(@angle);
+    left: @left;
+    top: 0;
+}
+
+.ears-left {
+    .ears();
+    .topLeft(15px, 93px);
+
+    .ear1 {
+        .part_1(-25deg);
+        right: 0;
+    }
+
+    .ear2 {
+        .part_2(-25deg, 6px);
+        right: 0;
+    }
+    .ear3 {
+        .part_3(-25deg, 21px);
+    }
+
+}
+
+.ears-right {
+    .ears();
+    .topRight(15px, 93px);
+
+    .ear1 {
+        .part_1(25deg);
+        left: 0;
+    }
+
+    .ear2 {
+        .part_2(25deg, 7px);
+        left: 1px;
+    }
+
+    .ear3 {
+        .part_3(25deg, 9px);
+    }
+}
+
+//上身
+
+.bod(@width, @height, @top,@margin-left) {
+    .size(@width, @height, absolute);
+    .topLeft(@top, 50%);
+    margin-left: @margin-left;
+    background-color: #818181;
+    border-radius: 160px 160px 90px 90px;
+}
+
+.nose() {
+    .size(10px, 6px, absolute);
+    background-color: #000;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+}
+
+.eyes() {
+    .size(40px, 40px, absolute);
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.eyesball() {
+    .size(16px, 16px, absolute);
+    border-radius: 8px;
+    background-color: #000;
+    margin-top: -8px;
+}
+
+.goatee1s(@top, @left, @angle) {
+    .size(125px, 0, absolute);
+    .topLeft(@top, @left);
+    transform: rotate(@angle);
+    border: 1px solid #000;
+}
+
+.ani-body {
+    .bod(300px, 245px, 50px, -150px);
+    z-index: 1;
+
+    //嘴
+    .mouth {
+        .size(10px, 10px, absolute);
+        .topLeft(150px, 50%);
+        .border(1px solid #000, none, none, none);
+        border-radius: 5px 5px 0 0;
+        margin-left: -5px;
+    }
+
+    //鼻子
+    .nose {
+        .size(50px, 20px, absolute);
+        .topLeft(85px, 50%);
+        margin-left: -25px;
+        border-radius: 20px;
+        background-color: #646464;
+
+        .naris-left {
+            .nose();
+            .topLeft(10px, 7px);
+        }
+
+        .naris-right {
+            .nose();
+            .topRight(10px, 7px);
+        }
+    }
+
+    //左眼
+    .eye-left {
+        .eyes();
+        .topLeft(70px, 45px);
+
+        .eyeball {
+            .eyesball();
+            .topRight(50%, 8px);
+        }
+    }
+
+    //右眼
+    .eye-right {
+        .eyes();
+        .topRight(70px, 45px);
+
+        .eyeball {
+            .eyesball();
+            .topLeft(50%, 8px);
+        }
+    }
+
+    //右胡子
+    .goatte-box-right {
+        .topRight(285px, 0);
+        transform: rotate(180deg);
+        position: absolute;
+    }
+
+    //左胡子
+    .goatee1 {
+        .goatee1s(105px, -64px, 20deg);
+    }
+
+    .goatee2 {
+        .goatee1s(140px, -68px, 0deg);
+    }
+
+    .goatee3 {
+        .goatee1s(175px, -63px, -20deg);
+    }
+    //======左胡子
+
+
+}
+
+//下身
+
+.ani-body1 {
+    .bod(334px, 310px, 155px, -167px);
+    border: 1px solid #000;
+
+    .leg {
+        .size(0, 5px, absolute);
+        border: 1px solid #000;
+        .bottomLeft(0, 166px);
+    }
+}
+
+//肚子
+
+.bellys(@angle) {
+    .size(135px, 0, absolute);
+    bottom: 25px;
+    border-bottom: 110px solid #deb887;
+    transform: skewy(@angle);
+}
+
+.decorate-boxs(@top, @left) {
+    .topLeft(@top, @left);
+    position: absolute;
+}
+
+.decorates(@angle) {
+    width: 3px;
+    height: 0;
+    border: 10px solid #818181;
+    transform: skewy(@angle);
+}
+
+.belly-box {
+    .size(334px, 310px, absolute);
+    z-index: 2;
+    top: -10px;
+}
+
+.belly1 {
+    .size(264px, 113px, absolute);
+    .bottomLeft(104px, 50%);
+    margin-left: -132px;
+    background-color: #deb887;
+    border-radius: 140px;
+
+    .decorate1 {
+        .decorates(-30deg);
+        border-top-left-radius: 20px;
+    }
+
+    .decorate2 {
+        .decorates(30deg);
+        border-top-right-radius: 20px;
+        position: absolute;
+        .topRight(0, -23px);
+    }
+
+    .decorate-box1 {
+        .topLeft(20px, 20px);
+        position: absolute;
+    }
+
+    .decorate-box2 {
+        .topLeft(35px, 100px);
+        position: absolute;
+    }
+
+    .decorate-box3 {
+        .topLeft(25px, 180px);
+        position: absolute;
+    }
+
+    .decorate-box4 {
+        .topLeft(71px, 139px);
+        position: absolute;
+    }
+
+    .decorate-box5 {
+        .topLeft(77px, 70px);
+        position: absolute;
+    }
+}
+
+.belly2 {
+    .bellys(25deg);
+    left: 35px;
+    border-bottom-left-radius: 110px;
+}
+
+.belly3 {
+    .bellys(-25deg);
+    right: 35px;
+    border-bottom-right-radius: 110px;
+}
+
+//手
+
+.hand(@rotate, @skew) {
+    .size(75px, 195px, absolute);
+    transform: rotate(@rotate) skew(@skew);
+    background-color: #818181;
+    border: 1px solid #000;
+    border-radius: 40px;
+}
+
+.left-hand {
+    .hand(25deg, 10deg);
+    .topLeft(213px, 16px);
+}
+
+.right-hand {
+    .hand(-25deg, -10deg);
+    .topRight(213px, 16px);
+}
+
+//站牌
+
+.bus-board {
+    .size(400px, 465px, absolute);
+    .topRight(100px, 32px);
+}
+
+.pillars(@bottom) {
+    .size(60px, 50px, absolute);
+    .bottomLeft(@bottom, 50%);
+    margin-left: -31px;
+    border-radius: 26px;
+    transform: rotatex(125deg);
+}
+
+.pointeds(@angle) {
+    .size(0, 49px, absolute);
+    transform: rotate(@angle);
+    .border(none, 1px solid #000, none, 1px solid #000);
+}
+
+.pillar-box {
+    .size(60px, 505px, absolute);
+    .bottomLeft(0, 50%);
+    margin-left: -30px;
+    .border(none, 1px solid #000, none, 1px solid #000);
+    background: url("../images/shuwen.jpg") no-repeat -35px 0;
+
+    .pointed {
+        .size(60px, 20px, absolute);
+        top: -23px;
+
+        .fill {
+            .border(none, 30px solid transparent, 55px solid #8a5728, 30px solid transparent);
+            position: absolute;
+            top: -32px;
+        }
+    }
+
+    .pillar-top {
+        .pillars(480px);
+        .border(1px solid #000, none, none, none);
+    }
+
+    .pallar-bottom {
+        .pillars(-25px);
+        border: 1px solid #000;
+        background-color: #8a5728;
+    }
+}
+
+.rights(@top, @right) {
+    .size(50px, 50px, absolute);
+    .topRight(@top, @right);
+    border-right: 60px solid #cc803b;
+    border-top-right-radius: 30px;
+}
+
+.one {
+    .size(350px, 180px, absolute);
+    background-color: #cc803b;
+    border-radius: 0 21px 76px 0;
+    transform: rotate(-15deg);
+
+    .one-box {
+        .size(350px, 180px, absolute);
+
+        .left {
+            .border(90px solid transparent, 90px solid #cc803b, 90px solid transparent, none);
+            .topLeft(0, -90px);
+            position: absolute;
+        }
+
+        .right {
+            .rights(25px, -15px);
+            transform: skew(-30deg);
+        }
+
+        .right1 {
+            .rights(95px, -70px);
+            transform: skew(-30deg) rotate(-180deg);
+        }
+    }
+}
+
+.font(@fontSize, @color, @lineHeight, @textAlign) {
+    font-size: @fontSize;
+    color: @color;
+    line-height: @lineHeight;
+    text-align: @textAlign;
+}
+
+.font-size(@width, @height) {
+    width: @width;
+    height: @height;
+}
+
+.text {
+    .size(320px, 150px, relative);
+    border: 1px solid #000;
+    background-color: #fff;
+    z-index: 1;
+    transform: rotate(-15deg);
+    top: 15px;
+
+    span {
+        .font(22px, #fff, 50px, center);
+        .font-size(50px, 50px);
+        display: block;
+        background-color: burlywood;
+        border-radius: 25px;
+        float: left;
+    }
+
+    p {
+        .font(20px, #000, 50px, center);
+    }
+
+    .line {
+        .size(180px, 0px, relative);
+        border: 1px solid #aa3333;
+        margin: 0 auto;
+
+        .arrow {
+            .border(10px solid transparent, none, 10px solid transparent, 10px solid #aa3333);
+            position: absolute;
+            .topRight(-10px, -5px);
+        }
+    }
+
+    ul {
+        margin-top: 10px;
+
+        li {
+            float: left;
+            list-style: none;
+            width: 20px;
+            text-align: center;
+        }
+    }
+}
+
+.direction {
+    top: 205px;
+    position: absolute;
+
+    .one {
+        transform: rotate(175deg);
+    }
+
+    .text {
+        transform: rotate(-5deg);
+        right: -28px;
+    }
+}
+
+.direction1 {
+    top: 40px;
+}
