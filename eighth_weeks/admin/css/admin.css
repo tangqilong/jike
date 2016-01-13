@@ -1,0 +1,281 @@
+.container{
+    width: 100%;
+    height: 635px;
+    min-width: 1000px;
+    overflow: hidden;
+}
+
+.block{
+    display: block;
+}
+
+.none{
+    display: none;
+}
+
+/*顶部*/
+
+.container header .logo{
+    background: url("../tupian/top.png");
+    height: 85px;
+    position: relative;
+}
+
+.container header .logo img{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/*导航栏*/
+
+.icon{
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+}
+
+.container nav .text-box{
+    display: block;
+    color: #fff;
+    line-height: 45px;
+    font-size: 13px;
+    position: relative;
+    width: 75px;
+    height: 45px;
+    float: left;
+    cursor: pointer;
+}
+
+.container nav .text-box span{
+    display: block;
+    position: absolute;
+    width: 55px;
+    height: 45px;
+    left: 20px;
+}
+
+.container nav{
+    background: url("../tupian/nav.png");
+    height: 45px;
+}
+
+.container nav .box{
+    margin: 0 20px;
+}
+
+.container nav .nav-left{
+    float: left;
+    height: 45px;
+    width: 75px;
+}
+
+.container nav .nav-right{
+    float: right;
+    height: 45px;
+    width: 300px;
+}
+
+.container nav .nav-left .text-box .left{
+    background: url("../tupian/icon.png") no-repeat;
+}
+
+.container nav .nav-right .text-box .icon{
+    top: 15px;
+}
+
+.container nav .nav-right .text-box .right-1{
+    background: url("../tupian/yonghu.png") no-repeat;
+}
+
+.container nav .nav-right .text-box .right-2{
+    background: url("../tupian/guanli.png") no-repeat;
+}
+
+.container nav .nav-right .text-box .right-3{
+    background: url("../tupian/key.png") no-repeat;
+}
+
+.container nav .nav-right .text-box .right-4{
+    background: url("../tupian/zhuxiao.png") no-repeat;
+}
+
+/*设置菜单*/
+
+.container .body-con{
+    width: 100%;
+    min-width: 1349px;
+    height: 505px;
+    padding-bottom: 1000px;
+    border: 1px solid #FFFFFF;
+    background-color: #333333;
+}
+
+.container .body-con .left-menu{
+    float: left;
+    width: 200px;
+    background: rgb(81,81,81);
+    height: 1000px;
+    border: 1px solid #FFFFFF;
+}
+
+.container .body-con .left-menu div span{
+    display: block;
+    width: 100%;
+    height: 33px;
+    line-height: 33px;
+    background: url("../tupian/linkbeijing.png") no-repeat;
+    color: #fff;
+    font-size: 14px;
+    text-indent: 25px;
+    cursor: pointer;
+}
+
+.container .body-con .left-menu div ul{
+    display: none;
+}
+
+.container .body-con .left-menu div ul li{
+    color: #FFFFFF;
+    font-size: 13px;
+    text-indent: 20px;
+    line-height: 30px;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+}
+
+/*右侧主要内容*/
+
+.container .body-con .right-body{
+    float: left;
+    width: 1140px;
+    height: 1000px;
+    margin-left: 1px;
+    overflow-y: scroll;
+    border: 1px solid #FFFFFF;
+    background: #FFFFFF;
+}
+
+.container .body-con .right-body .right-box{
+    width: 100%;
+    height: auto;
+}
+
+.container .body-con .right-body .right-box nav{
+    background: url("../tupian/02.png");
+    height: 25px;
+}
+
+.container .body-con .right-body .right-box nav span{
+    color: #FFFFFF;
+    line-height: 25px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.container .body-con .right-body .right-box .log{
+    width: 100%;
+    height: auto;
+}
+
+.container .body-con .right-body .right-box header{
+    background: url("../tupian/01.png");
+    height: 25px;
+    color: #FFFFFF;
+    line-height: 25px;
+    font-size: 14px;
+    text-indent: 20px;
+    margin-top: 10px;
+}
+
+.container .body-con .right-body .right-box .log textarea{
+    width: 100%;
+    height: 200px;
+}
+
+.container .body-con .right-body .right-box .procedure ul{
+    height: 200px;
+    overflow-y: scroll;
+    margin-top: 0;
+}
+
+.container .body-con .right-body .right-box .procedure ul li{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #f3f3f3;
+    margin-bottom: 0;
+}
+
+.container .body-con .right-body .right-box ul{
+    margin-top: 50px;
+}
+
+.container .body-con .right-body .right-box ul li{
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.container .body-con .right-body .right-box ul li span{
+    margin-left: -70px;
+}
+
+.container .body-con .right-body .right-box ul li input{
+    width: 500px;
+    height: 25px;
+}
+
+.container .body-con .right-body .right-box ul .text{
+    position: relative;
+}
+
+.container .body-con .right-body .right-box ul .text span{
+    position: relative;
+    top: -40px;
+}
+
+.container .body-con .right-body .right-box ul .text textarea{
+    width: 500px;
+    height: 100px;
+    overflow-y: scroll;
+}
+
+.container .body-con .right-body .right-box ul .sum{
+    text-align: center;
+}
+
+.container .body-con .right-body .right-box .php-form{
+    position: relative;
+}
+
+.container .body-con .right-body .right-box .php-form p{
+    line-height: 50px;
+}
+
+.container .body-con .right-body .right-box .php-form label{
+    float: left;
+}
+
+.container .body-con .right-body .right-box .php-form input{
+    width: 200px;
+}
+
+.container .body-con .right-body .right-box .php-form textarea{
+    width: 200px;
+    height: 150px;
+}
+
+.container .body-con .right-body .right-box .php-form .reset{
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    width: 50px;
+}
+
+.container .body-con .right-body .right-box .php-form .sum{
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    width: 50px;
+}
