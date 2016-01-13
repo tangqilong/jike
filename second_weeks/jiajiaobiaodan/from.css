@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #027F80;
+}
+
+div{
+    width: 710px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.head{
+    width: 710px;
+    background-color: white;
+}
+
+.centent{
+    margin: 0 auto;
+    width:650px;
+    background-color: white;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+td{
+    padding: 5px;
+}
+
+.head-left-img{
+    width: 29px;
+    height: 28px;
+    position: relative;
+    left: -2px;
+    top: -2px;
+    padding: 0;
+}
+
+.head-logo{
+    row-span: 2;
+    width: 220px;
+    height: 28px;
+}
+
+.head-right-img{
+    width: 29px;
+    height: 28px;
+    position: relative;
+    right: -2px;
+    top: -2px;
+    padding: 0;
+
+}
+
+.link{
+    color: #ff0099;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.link1{
+    color: #ff0099;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.body-th{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.statement-p{
+    color: red;
+    display: inline;
+}
+
+.body-statement{
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.body-title{
+    background-color: #eeeeee;
+}
+
+.body-data{
+    font-size: 13px;
+    line-height: 150%;
+    padding-left: 10px;
+    font-weight: bold;
+    color: #0000cc;
+}
+
+.font2{
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.padding{
+    padding-right: 8px;
+}
+
+.p1{
+    color: red;
+    display: inline;
+    line-height: 150%;
+}
+
+.p2{
+    color: #0000cc;
+    display: inline;
+    line-height: 150%;
+}
+
+.text1{
+    width: 250px;
+}
+
+.font1{
+    font-size: 12px;
+}
+
+.subjiects{
+    width: 100%;
+}
+
+.foot{
+    width: 710px;
+    background-color: white;
+}
+
+.foot-left-img{
+    width: 29px;
+    height: 28px;
+    position: relative;
+    left: -2px;
+    bottom: -5px;
+    padding: 0;
+}
+
+.foot-right-img{
+    width: 29px;
+    height: 28px;
+    position: relative;
+    right: -2px;
+    bottom: -5px;
+    padding: 0;
+}
+
+.foot-center{
+    font-size: 10px;
+}
+
+.submit{
+    width: 100px;
+}

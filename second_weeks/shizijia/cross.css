@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("101072377.jpg");
+    background-size: cover;
+}
+
+img{
+    position: absolute;
+    top: 50%;
+    margin-top: -36px;
+    margin-left: -36px;
+}
+
+.con{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -175px;
+    margin-left: -175px;
+    opacity: 0.8;
+}
+
+.top {
+    width: 100px;
+    height: 100px;
+    background-color: rosybrown;
+    position: absolute;
+    left: 125px;
+    top: 26px;
+    box-shadow: 5px -3px 15px blue;
+    opacity: 0.8;
+}
+
+.centent{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 126px;
+    left: 125px;
+    text-align: center;
+}
+
+.bottom{
+    width: 100px;
+    height: 100px;
+    background-color: #EE31F3;
+    position: absolute;
+    left: 125px;
+    top: 226px;
+    box-shadow: 3px 3px 15px red;
+    opacity: 0.8;
+}
+
+.left{
+    width: 100px;
+    height: 100px;
+    background-color: #00FF40;
+    position: absolute;
+    top: 126px;
+    left: 25px;
+    box-shadow: -3px 4px 15px rgb(119, 26, 106);
+    opacity: 0.8;
+}
+
+.right{
+    width: 100px;
+    height: 100px;
+    background-color: #FFFA7F;
+    position: absolute;
+    top: 126px;
+    right: 25px;
+    box-shadow: 3px 7px 15px #0C7D53;
+    opacity: 0.8;
+}

@@ -1,0 +1,36 @@
+.xiezi{
+    width: 100px;
+    height: 100px;
+    background-color: #FFFA7F;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.xiehe{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 5px solid aqua;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.p1{
+    font-size: 4px;
+}
+
+.xiezi1{
+    width: 80px;
+    height: 80px;
+    background-color: #FFFA7F;
+}
+
+.xiehe1{
+    margin:50px auto 50px;
+    width: 110px;
+    height: 110px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 5px solid blanchedalmond;
+    overflow: scroll;
+}

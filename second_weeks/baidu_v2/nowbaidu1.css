@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 600px;
+    position: relative;
+    height: 100%;
+    text-align: center;
+}
+
+div{
+    display: block;
+}
+
+/*链接*/
+
+.linkmemu{
+    right: 20px;
+    position: absolute;
+    top: 20px;
+
+}
+
+.linkmemu a:hover{
+    color: #0000cc;
+}
+
+.link{
+    font-size: 13px;
+    padding: 6px;
+    font-weight: bold;
+    line-height: 15px;
+    color: black;
+}
+
+.link1{
+    font-size: 13px;
+    padding: 6px;
+    color: black;
+}
+
+
+.span{
+    color: white;
+    font-size: 13px;
+    background-color: #317ef3;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/*图片*/
+
+.img{
+    margin-top: 5%;
+}
+
+/*表单*/
+
+.text:hover{
+    border: 1px solid #666666;
+    border-right: none;
+}
+
+.text:focus{
+    outline: none;
+    border: 1px solid #3a71f3;
+}
+
+.search:hover{
+    background-color: #3a71f3;
+}
+
+.form{
+    width: 630px;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.text{
+    width: 522px;
+    height: 30px;
+    padding-left: 5px;
+    float: left;
+    border: 1px solid #b6b6b6;
+}
+
+.search{
+    float: left;
+    height: 34px;
+    width: 100px;
+    background-color:  #317ef3;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/*底部*/
+
+.food{
+    position: absolute;
+    width: 352px;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -176px;
+}
+
+
+.p1{
+    font-size: 13px;
+}
+
+.p2{
+    font-size: 13px;
+    color: #666;
+    padding-top: 0;
+}
+
+.link3{
+    color: #666;
+}
