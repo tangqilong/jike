@@ -1,0 +1,255 @@
+/*ÖØÖÃ*/
+body,ul,li,div,header,nav,img,a{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #2b66b4;
+}
+
+li{
+    list-style: none;
+    float: left;
+}
+
+.adge{
+    margin-left: 50px;
+    margin-right: 50px;
+    min-width: 1250px;
+}
+
+/*Í·²¿*/
+
+.container{
+    width: 100%;
+    background-color: #f4f4f4;
+    position: relative;
+    min-width: 1250px;
+}
+
+/*ÓÃ»§×¢²á/µÇÂ½*/
+
+.admin{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 12px;
+}
+
+/*µ¼º½À¸*/
+
+.container header .group {
+    margin-top: 20px;
+}
+
+.container header .group .head-box img{
+    float: left;
+}
+
+.container header .group .head-box ul{
+    float: left;
+    margin: 20px 0 0 20px;
+}
+
+.container header .group .head-box ul li{
+    margin-right: 10px;
+}
+
+.container header .group .head-box ul li .image{
+    text-decoration: none;
+    color: #000;
+}
+
+.container header .group .head-box ul li a{
+    text-decoration: underline;
+}
+
+/*ËÑË÷*/
+
+.container header .group .search{
+    clear: left;
+    padding-top: 10px;
+}
+
+.container header .group .search .text-search{
+    width: 535px;
+    height: 30px;
+    padding-left: 10px;
+    box-shadow: inset 0 0 1px #808080;
+    outline: none;
+    font-size: 16px;
+    float: left;
+}
+
+.container header .group .search .button{
+    float: left;
+    margin-left: 15px;
+    height: 35px;
+    width: 100px;
+    box-shadow: 0 0 1px #808080;
+}
+
+/*ICONÍ¼±ê*/
+
+.container header .group .camera{
+    position: absolute;
+    top: 60px;
+    left: 570px;
+}
+
+.container header .group .camera .camera-icon{
+    background: url("tupian/logo/camera.png") no-repeat -25px 0;
+    display: block;
+    width: 19px;
+    height: 17px;
+}
+
+.container header .group .camera .camera-icon:hover{
+    background: url("tupian/logo/camera.png") no-repeat 0 0;
+}
+
+/*Ö÷µ¼º½À¸*/
+
+.container nav .nav-1{
+    background: url("tupian/logo/bg-wpr-trans_ffea424.png") repeat-x 0 0;
+    margin-top: 50px;
+    height: 40px;
+}
+
+.container nav .nav-1 li{
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+}
+
+.container nav .nav-1 li:hover{
+    background-color: #191a21;
+}
+
+.container nav .nav-1 .first-page{
+    padding: 10px 25px 10px 25px;
+}
+
+.container nav .nav-1 li a{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.container nav .nav-1 .like{
+    padding: 0;
+    float: right;
+    margin: 7px 20px 0 0;
+}
+
+.container nav .nav-1 .like .like-icon{
+    display: block;
+    width: 90px;
+    height: 25px;
+    background: url("tupian/logo/upload_collect_button_c1e5cfb.png") no-repeat -110px 0;
+}
+
+.container nav .nav-1 .like .like-icon:hover{
+    background: url("tupian/logo/upload_collect_button_c1e5cfb.png") no-repeat 0 0;
+}
+
+/*µ¼º½Ñ¡ÔñÀ¸*/
+
+.container nav .choice{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    margin-top: 30px;
+}
+
+.container nav .choice .nav-2{
+    margin: 30px 250px 30px 30px;
+}
+
+.container nav .choice .nav-2 li{
+    margin-right: 18px;
+    margin-bottom: 20px;
+}
+
+.container nav .choice .nav-2 li a{
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.container nav .choice .nav-2 li a:hover{
+    background-color: #e8e8e8;
+}
+
+.container nav .choice .nav-2 .all a{
+    padding: 5px 10px;
+    background-color: #ff0000;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.container nav .choice .nav-2 .all a:hover{
+    background-color: #ff0000;
+}
+
+/*ÂÖ²¥*/
+
+/*±êÇ©*/
+
+.container .content-box{
+    margin: 20px 50px 0 50px;
+    height: 500px;
+    min-width: 1250px;
+}
+
+.container .content-box .lable-nav .lables .lables-newest{
+    clear: left;
+}
+
+.container .content-box .lable-nav .lables .lables-newest a{
+    display: block;
+    width: 70px;
+    height: 30px;
+    background: url("tupian/logo/channel-btn.png") no-repeat 0 0;
+}
+
+.container .content-box .lable-nav .lables .lables-hot a{
+    display: block;
+    width: 70px;
+    height: 30px;
+    background: url("tupian/logo/channel-btn.png") no-repeat -70px 0;
+}
+
+.container .content-box .lable-nav .lables .lables-album a{
+    display: block;
+    width: 70px;
+    height: 30px;
+    background: url("tupian/logo/channel-btn.png") no-repeat -140px 0;
+}
+
+/*Í¼Æ¬*/
+
+.container .content-box .img-con-box{
+    clear: left;
+    position: relative;
+}
+
+.container .content-box .img-con-box .img-box{
+    position: relative;
+    float: left;
+    width: 247px;
+}
+
+.container .content-box .img-con-box .img-box .img{
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+}
+
+.container .content-box .img-con-box .img-box .img img{
+    width: 225px;
+    height: auto;
+}

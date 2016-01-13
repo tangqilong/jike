@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>瀑布流练习</title>
+    <link href="pubuliu.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!--头部-->
+        <header class="adge">
+            <!--用户注册/登陆-->
+            <div class="admin">
+                <a href="http://www.baidu.com">百度首页</a>
+                |
+                <a href="http://passport.baidu.com/v2/?login&tpl=im&u=http%3A%2F%2Fimage.baidu.com%2Fchannel%3Fc%3D%25E7%25BE%258E%25E5%25A5%25B3%23%25E7%25BE%258E%25E5%25A5%25B3">
+                    登陆
+                </a>
+                <a href="http://passport.baidu.com/v2/?reg&regType=1&tpl=im&u=http%3A%2F%2Fimage.baidu.com%2Fchannel%3Fc%3D%25E7%25BE%258E%25E5%25A5%25B3%23%25E7%25BE%258E%25E5%25A5%25B3">
+                    注册
+                </a>
+            </div>
+            <!--头部LOGO、导航及搜索-->
+            <div class="group">
+                <div class="head-box">
+                    <!--LOGO-->
+                    <img src="tupian/logo/logo_3b6de4c.png"/>
+                    <!--导航栏-->
+                    <ul>
+                        <li>
+                            <a href="http://news.baidu.com">新闻</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">网页</a>
+                        </li>
+                        <li>
+                            <a href="http://tieba.baidu.com">贴吧</a>
+                        </li>
+                        <li>
+                            <a href="http://zhidao.baidu.com">知道</a>
+                        </li>
+                        <li>
+                            <a href="http://music.baidu.com">音乐</a>
+                        </li>
+                        <li>
+                            <a class="image">图片</a>
+                        </li>
+                        <li>
+                            <a href="http://v.baidu.com">视频</a>
+                        </li>
+                        <li>
+                            <a href="http://map.baidu.com">地图</a>
+                        </li>
+                        <li>
+                            <a href="http://baike.baidu.com">百科</a>
+                        </li>
+                        <li>
+                            <a href="http://wenku.baidu.com">文库</a>
+                        </li>
+                    </ul>
+                    <!--搜索-->
+                    <div class="search">
+                        <input type="text" class="text-search"/>
+                        <button type="button" class="button">百度一下</button>
+                    </div>
+                    <!--ICON图标-->
+                    <div class="camera">
+                        <a href="#" title="上传图片，搜索相关信息" class="camera-icon"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--中间导航栏-->
+        <nav class="adge">
+            <!--主导航栏-->
+            <ul class="nav-1">
+                <li class="first-page">
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">明星</a>
+                </li>
+                <li>
+                    <a href="#">美女</a>
+                </li>
+                <li>
+                    <a href="#">壁纸</a>
+                </li>
+                <li>
+                    <a href="#">动漫</a>
+                </li>
+                <li>
+                    <a href="#">摄影</a>
+                </li>
+                <li>
+                    <a href="#">家居</a>
+                </li>
+                <li>
+                    <a href="#">婚假</a>
+                </li>
+                <li>
+                    <a href="#">设计</a>
+                </li>
+                <li>
+                    <a href="#">美食</a>
+                </li>
+                <li>
+                    <a href="#">宠物</a>
+                </li>
+                <li>
+                    <a href="#">汽车</a>
+                </li>
+                <li class="like">
+                    <a class="like-icon"></a>
+                </li>
+            </ul>
+            <div class="choice">
+                <!--导航选择栏-->
+                <ul class="nav-2">
+                    <li class="all">
+                        <a href="#">全部</a>
+                    </li>
+                    <li>
+                        <a href="#">小清新</a>
+                    </li>
+                    <li>
+                        <a href="#">甜素纯</a>
+                    </li>
+                    <li>
+                        <a href="#">清纯</a>
+                    </li>
+                    <li>
+                        <a href="#">校花</a>
+                    </li>
+                    <li>
+                        <a href="#">唯美</a>
+                    </li>
+                    <li>
+                        <a href="#">气质</a>
+                    </li>
+                    <li>
+                        <a href="#">嫩萝莉</a>
+                    </li>
+                    <li>
+                        <a href="#">时尚</a>
+                    </li>
+                    <li>
+                        <a href="#">长发</a>
+                    </li>
+                    <li>
+                        <a href="#">可爱</a>
+                    </li>
+                    <li>
+                        <a href="#">古典美女</a>
+                    </li>
+                    <li>
+                        <a href="#">素颜</a>
+                    </li>
+                    <li>
+                        <a href="#">非主流</a>
+                    </li>
+                    <li>
+                        <a href="#">短发</a>
+                    </li>
+                    <li>
+                        <a href="#">高雅大气很有范</a>
+                    </li>
+                </ul>
+                <!--轮播-->
+                <!--<div class="carousel">-->
+                    <!--<div class="cor-con">-->
+                        <!--<span>-->
+                            <!--<img src="tupian/neirongtupian/fennen.jpg"/>-->
+                            <!--<label>粉嫩女人心美好时光</label>-->
+                        <!--</span>-->
+                        <!--<span>-->
+                            <!--<img src="tupian/neirongtupian/qingxin.jpg"/>-->
+                            <!--<label>清新甜美生活写真照</label>-->
+                        <!--</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+        </nav>
+        <!--内容-->
+        <div class="content-box">
+            <!--标签-->
+            <div class="lable-nav">
+                <ul class="lables">
+                    <li class="lables-newest">
+                        <a href="#"></a>
+                    </li>
+                    <li class="lables-hot">
+                        <a href="#"></a>
+                    </li>
+                    <li class="lables-album">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--图片-->
+            <div class="img-con-box">
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/1.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/2.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/3.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/4.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/5.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/6.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/7.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/8.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/9.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/10.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/1.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/2.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/3.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/4.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/5.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/6.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/7.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/8.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/9.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/10.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/1.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/2.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/3.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/4.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/5.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/6.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/7.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/8.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/9.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/10.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/1.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/2.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/3.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/4.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/5.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/6.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/7.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/8.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/9.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/10.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/1.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/2.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/3.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/4.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/5.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/6.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/7.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/8.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/9.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/10.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/1.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/2.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/3.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/4.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/5.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/6.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/7.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/8.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/9.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/10.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/1.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/2.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/3.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/4.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/5.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/6.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/7.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/8.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/9.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/10.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/1.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/2.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/3.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/4.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/5.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/6.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/7.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/8.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/9.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/10.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/1.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/2.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/3.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/4.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/5.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/6.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/7.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/8.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/9.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/10.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/1.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/2.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/3.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/4.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/5.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/6.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/7.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/8.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/9.jpg"/>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="tupian/neirongtupian/10.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="myjs.js"></script>
+    </div>
+</body>
+</html>
