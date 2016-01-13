@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    background-image: url("sy_20100412111438316318.jpg");
+    background-position: center;
+    background-size: cover;
+}
+table{
+    margin: 20px auto;
+    width: 1000px;
+    height: 500px;
+}
+caption{
+    font-size: 50px;
+    padding: 10px;
+}
+.yy{
+    font-size: 20px;
+    text-shadow: #666666 2px 2px 3px;
+    background-color: antiquewhite;
+}
+.sx{
+    font-size: 20px;
+    text-shadow: rgba(249, 69, 182, 0.74) 2px 2px 3px;
+    background-color: lightgray;
+}
+.yw{
+    font-size: 20px;
+    text-shadow: rgba(139, 50, 43, 0.79) 2px 2px 3px;
+    background-color: cornsilk;
+}
+.hx{
+    font-size: 20px;
+    text-shadow: rgb(57, 19, 169) 2px 2px 3px;
+    background-color: lawngreen;
+}
+.dl{
+    font-size: 20px;
+    text-shadow: rgb(80, 169, 52) 2px 2px 3px;
+    background-color: burlywood;
+}
+.zz{
+    font-size: 20px;
+    text-shadow: rgba(255, 251, 33, 0.98) 2px 2px 3px;
+    background-color: lightskyblue;
+}
+.ls{
+    font-size: 20px;
+    text-shadow: rgb(244, 28, 198) 2px 2px 3px;
+    background-color: mediumspringgreen;
+}
+.yiny{
+    font-size: 20px;
+    text-shadow: rgba(31, 255, 238, 0.84) 2px 2px 3px;
+    background-color: salmon;
+}
+.wl{
+    font-size: 20px;
+    text-shadow: rgb(255, 9, 111) 2px 2px 3px;
+    background-color: lightcoral;
+}
+.ty{
+    font-size: 20px;
+    text-shadow: greenyellow 2px 2px 3px;
+    background-color: paleturquoise;
+}
+.riqi{
+    color: darkred;
+    font-size: 20px
+}
+.shijian{
+    color: white;
+    width: 120px;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+.wuxiu{
+    color: white;
+    font-size: 30px;
+}
