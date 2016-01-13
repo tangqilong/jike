@@ -1,0 +1,737 @@
+body,div,input,dd,dl{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+}
+
+/*头部导航*/
+
+.nav-text{
+    color: #999;
+    line-height: 60px;
+    font-size: 13px;
+}
+
+.nav-con{
+    width: 100%;
+    height: 61px;
+    border-bottom: 1px solid #c3c3c3;
+}
+
+.nav-con .nav-link{
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav-con .nav-link a{
+    text-decoration: none;
+}
+
+/*导航栏左侧*/
+
+.nav-con .nav-link .nav-link-left{
+    float: left;
+}
+
+/*导航栏右侧*/
+
+.nav-con .nav-link .nav-link-right{
+    float: left;
+    margin-left: 30px;
+}
+
+.nav-link-right:hover{
+    background-color: #ececec;
+}
+
+.nav-con .nav-link .nav-link-right .email-icon{
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    background: url("tupian/index_widthlg.png") no-repeat -106px -133px;
+}
+
+.nav-con .nav-link .nav-link-right .skin{
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background: url("tupian/index_widthlg.png") no-repeat -254px -132px;
+}
+
+/*导航栏中间*/
+
+.nav-con .nav-link .nav-link-middle{
+    float: left;
+}
+
+.nav-con .nav-link .nav-link-middle .first-page{
+    display: block;
+    width: 60px;
+    background: url("tupian/index_widthlg.png") no-repeat -20px -153px;
+}
+
+.nav-con .nav-link .nav-link-middle .first-page .first-page-span{
+    color: #fff;
+    line-height: 60px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.nav-con .nav-link .nav-link-middle .nav-position{
+    margin-left: 100px;
+    margin-top: -60px;
+    cursor: pointer;
+}
+
+.nav-position:hover{
+    background-color: #ececec;
+}
+
+.nav-con .nav-link .nav-link-middle .nav-position .seat{
+    display: inline-block;
+    width: 15px;
+    height: 7px;
+    background: url("tupian/index_widthlg.png") no-repeat -50px -97px;
+}
+
+/*导航栏广告*/
+
+.nav-con .nav-link .nav-adver{
+    float: left;
+    border-left: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+    margin-left: 30px;
+}
+
+/*搜索栏*/
+
+.search-con{
+    padding-top: 30px;
+    width: 100%;
+}
+
+.search-con .search-box{
+    width: 990px;
+    margin: 0 auto;
+}
+
+.search-con .search-box .search{
+    width: 800px;
+    margin: 0 auto;
+    height: 40px;
+    position: relative;
+}
+
+.search-con .search-box .search a{
+    float: left;
+}
+
+.search-con .search-box .search .inp-text{
+    float: left;
+    margin-left: 20px;
+    height: 30px;
+    width: 400px;
+    outline: none;
+    text-indent: 60px;
+}
+
+.search-con .search-box .search .inp-search{
+    float: left;
+    height: 34px;
+    width: 120px;
+}
+
+.search-con .search-box .search .web-ul{
+    background-color: #fff;
+    position: absolute;
+    left: 125px;
+    top: -8px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.search-con .search-box .search .bg-color-box .bg-color{
+    border: 1px solid #fff;
+    width: 115px;
+    height: 34px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 34px;
+}
+
+.search-con .search-box .search .bg-color-box{
+    width: 150px;
+    height: 34px;
+    float: left;
+}
+
+.search-con .search-box .search .bg-color-box .bg-color .yellow{
+    display: inline-block;
+    background-color: #a4a400;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+.search-con .search-box .search .bg-color-box .bg-color .red{
+    display: inline-block;
+    background-color: #ff0000;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+.search-con .search-box .search .bg-color-box .bg-color .grey{
+    display: inline-block;
+    background-color: #808080;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+.search-con .search-box .search .bg-color-box .bg-color .pink{
+    display: inline-block;
+    background-color: #c8959d;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+.search-con .search-box .search .bg-color-box .bg-color .orange{
+    display: inline-block;
+    background-color: #ffa500;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+.search-con .search-box .search .web-ul .web-text{
+    margin-left: -33px;
+    font-size: 13px;
+    color: #a9a9a9;
+}
+
+.search-con .search-box .search .web-ul .web-icon{
+    display: inline-block;
+    margin-left: -5px;
+    width: 10px;
+    height: 10px;
+    background: url("tupian/index_widthlg.png") no-repeat -51px -94px;
+}
+
+.search-con .search-box .search .web-ul:hover .web-icon{
+    background: url("tupian/index_widthlg.png") no-repeat -51px -103px;
+}
+
+.search-con .search-box .search .web-ul:hover .web-none-ul{
+    display: block;
+}
+
+.search-con .search-box .search .web-ul .web-none-ul{
+    margin-left: -41px;
+    margin-top: 7px;
+    list-style: none;
+    border-left: 1px solid #a9a9a9;
+    border-right: 1px solid #a9a9a9;
+    border-bottom: 1px solid #a9a9a9;
+    display: none;
+}
+
+.search-con .search-box .search .web-ul .web-none-ul li{
+    margin-left: -40px;
+    padding-left: 7px;
+    cursor: pointer;
+}
+
+.search-con .search-box .search .web-ul .web-none-ul li:hover{
+    background-color: #d1d1d1;
+}
+
+.search-con .search-box .search .web-ul .web-none-ul li span{
+    font-size: 13px;
+    color: #a9a9a9;
+}
+
+.search-con .search-box .search-link{
+    clear: left;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.search-con .search-box .search-link ul li{
+    float: left;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.search-con .search-box .search-link ul li .link-title{
+    font-size: 13px;
+    color: #090;
+    text-decoration: none;
+}
+
+.search-con .search-box .search-link ul li .link{
+    font-size: 13px;
+    color: #808080;
+    text-decoration: none;
+}
+
+.search-con .search-box .search-link ul li .link-red{
+    color: #ff0000;
+}
+
+.search-con .search-box .search-link ul li .menu-color-red{
+    color: #ff0000;
+}
+
+.search-con .search-box .search-link ul li .menu-color-red:hover{
+    color: #ff0000;
+}
+
+.search-con .search-box .search-link ul li .link-title:hover{
+    text-decoration: underline;
+}
+
+.search-con .search-box .search-link ul li .link:hover{
+    text-decoration: underline;
+    color: #ff0000;
+}
+
+/*主要内容*/
+
+.body-con{
+    padding-top: 30px;
+    width: 100%;
+}
+
+.body-con .body-box{
+    width: 990px;
+    height: 60px;
+    margin: 0 auto;
+    border-top: 2px solid #0aa770;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.body-con .body-box .body-nav ul .first{
+    background-color: #0aa770;
+}
+
+.body-con .body-box .body-nav ul .first a{
+    color: #fff;
+}
+
+.body-con .body-box .body-nav ul li{
+    float: left;
+    list-style: none;
+    width: 90px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.body-con .body-box .body-nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.body-con .body-box .body-nav ul li a:hover{
+    color: #0aa770;
+}
+
+.body-con .body-box .body-nav ul li a .line{
+    display: inline-block;
+    width: 1px;
+    height: 20px;
+    line-height: 20px;
+    background-image: url("tupian/menus_split.png");
+    margin-left: -20px;
+    margin-right: 10px;
+}
+
+/*内容*/
+
+.body-con .body-middle{
+    width: 990px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.body-con .body-middle .body-left{
+    float: left;
+}
+
+.body-con .body-middle .body-left .left-hot{
+    height: 135px;
+    width: 280px;
+    border: 1px solid #d9d9d9;
+}
+
+.body-con .body-middle .body-left .left-hot a{
+    float: left;
+    font-size: 15px;
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+    line-height: 30px;
+}
+
+.body-con .body-middle .body-left .left-hot a:hover{
+    text-decoration: underline;
+    color: #ff0000;
+}
+
+.body-con .body-middle .body-left .left-menu{
+    height: 225px;
+    width: 280px;
+    margin-top: 10px;
+    border: 1px solid #d9d9d9;
+}
+
+.body-con .body-middle .body-left .left-menu ul{
+    margin-left: -32px;
+    margin-top: 5px;
+}
+
+.body-con .body-middle .body-left .left-menu ul li{
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+    line-height: 35px;
+}
+
+.body-con .body-middle .body-left .left-menu ul .special{
+    margin-left: 0;
+}
+
+.body-con .body-middle .body-left .left-menu ul .special1{
+    margin-left: 34px;
+}
+
+.body-con .body-middle .body-left .left-menu ul li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #808080;
+}
+
+.body-con .body-middle .body-left .left-menu ul li a:hover{
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.body-con .body-middle .body-left .left-menu ul li .icon-tv{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("tupian/icon.png") no-repeat -18px -78px;
+}
+
+.body-con .body-middle .body-left .left-menu ul li .icon-game{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("tupian/icon.png") no-repeat -18px -299px;
+}
+
+.body-con .body-middle .body-left .left-menu ul li .icon-video{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("tupian/icon.png") no-repeat -18px -158px;
+}
+
+.body-con .body-middle .body-left .left-menu ul li .icon-animation{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("tupian/icon.png") no-repeat -18px -379px;
+}
+
+.body-con .body-middle .body-left .left-menu ul li .icon-new{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("tupian/icon.png") no-repeat -18px -99px;
+}
+
+.body-con .body-middle .body-left .left-menu ul li .icon-tourism{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("tupian/icon.png") no-repeat -18px -260px;
+}
+
+.body-con .body-middle .body-left .left-menu ul li .icon-stock{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("tupian/icon.png") no-repeat -18px -18px;
+}
+
+.body-con .body-middle .body-left .left-menu ul li .icon-joke{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("tupian/icon.png") no-repeat -18px -118px;
+}
+
+.body-con .body-middle .body-left .left-menu ul li .icon-shop{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("tupian/icon.png") no-repeat -18px -280px;
+}
+
+.body-con .body-middle .body-left .left-menu ul li .icon-education{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("tupian/icon.png") no-repeat -18px -360px;
+}
+
+.body-con .body-middle .body-left .left-menu ul li .icon-lefe{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("tupian/icon.png") no-repeat -18px -220px;
+}
+
+.body-con .body-middle .body-left .left-menu ul li .icon-food{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("tupian/icon.png") no-repeat -18px -40px;
+}
+
+/*主要内容*/
+
+.body-con .body-middle .body-content{
+    margin-left: 10px;
+    border: 1px solid #aaddbb;
+    float: left;
+    width: 670px;
+     height: 305px;
+    padding: 0 10px 0 10px;
+}
+
+.body-con .body-middle .body-content .content-box{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #e4e4e4;
+    margin-top: 10px;
+}
+
+.body-con .body-middle .body-content .content-box dl{
+    float: left;
+    margin-left: 12px;
+}
+
+.body-con .body-middle .body-content .content-box dl dd{
+    margin-bottom: 17px;
+}
+
+.body-con .body-middle .body-content .content-box dl dd a{
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.body-con .body-middle .body-content .content-box dl dd a:hover{
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.body-con .body-middle .body-content .content-box dl dd .baidu{
+    background: url("tupian/defaultIcon1229.png") no-repeat 0 -199px;
+    display: inline-block;
+    width: 48px;
+    text-indent: 20px;
+}
+
+.body-con .body-middle .body-content .content-box dl dd .tianmao{
+    background: url("tupian/defaultIcon1229.png") no-repeat 0 -480px;
+    display: inline-block;
+    width: 48px;
+    text-indent: 20px;
+}
+
+.body-con .body-middle .body-content .content-box dl dd .tianmao-icon{
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    background: url("tupian/bubble.png") no-repeat;
+    font-size: 13px;
+    text-align: center;
+    text-indent: 3px;
+    color: #ff0000;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -5px;
+}
+
+.body-con .body-middle .body-content .content-box dl dd .sina{
+    background: url("tupian/defaultIcon1229.png") no-repeat 0 -279px;
+    display: inline-block;
+    width: 48px;
+    text-indent: 20px;
+}
+
+.body-con .body-middle .body-content .content-box dl dd .fenghuang{
+    background: url("tupian/defaultIcon1229.png") no-repeat 0 -239px;
+    display: inline-block;
+    width: 80px;
+    text-indent: 20px;
+}
+
+.body-con .body-middle .body-content .content-box dl dd .sougou{
+    background: url("tupian/defaultIcon1229.png") no-repeat 0 -319px;
+    display: inline-block;
+    width: 48px;
+    text-indent: 20px;
+}
+
+.body-con .body-middle .body-content .content-box dl dd .taobao{
+    background: url("tupian/defaultIcon1229.png") no-repeat 0 -358px;
+    display: inline-block;
+    width: 80px;
+    text-indent: 20px;
+}
+
+.body-con .body-middle .body-content .content-box dl dd .tejia{
+    background: url("tupian/defaultIcon1229.png") no-repeat 0 -480px;
+    display: inline-block;
+    width: 85px;
+    text-indent: 20px;
+}
+
+.body-con .body-middle .body-content .content-box dl dd .tejia-icon{
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    background: url("tupian/bubble.png") no-repeat;
+    font-size: 13px;
+    text-align: center;
+    text-indent: 3px;
+    color: #ff0000;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: -6px;
+}
+
+.body-con .body-middle .body-content .content-box dl dd .qq{
+    background: url("tupian/defaultIcon1229.png") no-repeat 0 -40px;
+    display: inline-block;
+    width: 80px;
+    text-indent: 20px;
+}
+
+.body-con .body-middle .body-content .content-box dl dd .movie{
+    background: url("tupian/defaultIcon1229.png") no-repeat 0 -640px;
+    display: inline-block;
+    width: 48px;
+    text-indent: 20px;
+}
+
+.body-con .body-middle .body-content .content-box dl dd .wangyi{
+    background: url("tupian/defaultIcon1229.png") no-repeat 0 -158px;
+    display: inline-block;
+    width: 80px;
+    text-indent: 20px;
+}
+
+.body-con .body-middle .body-content .content-box dl dd .game4399{
+    background: url("tupian/defaultIcon1229.png") no-repeat 0 0;
+    display: inline-block;
+    width: 85px;
+    text-indent: 20px;
+}
+
+.body-con .body-middle .body-content .content-box dl dd .car{
+    background: url("tupian/defaultIcon1229.png") no-repeat 0 -521px;
+    display: inline-block;
+    width: 85px;
+    text-indent: 20px;
+}
+
+/*导航菜单*/
+
+.body-con .body-middle .body-content .content-menu .menu2{
+    margin-left: 17px;
+}
+
+.body-con .body-middle .body-content .content-menu .menu3{
+    margin-left: 55px;
+}
+
+.body-con .body-middle .body-content .content-menu .menu4{
+    margin-left: 17px;
+}
+
+.body-con .body-middle .body-content .content-menu .menu5{
+    margin-left: 46px;
+}
+
+.body-con .body-middle .body-content .content-menu .menu6{
+    margin-left: 5px;
+}
+
+.body-con .body-middle .body-content .content-menu dl{
+    float: left;
+}
+
+.body-con .body-middle .body-content .content-menu dl dd{
+    line-height: 35px;
+}
+
+.body-con .body-middle .body-content .content-menu dl dd a{
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.body-con .body-middle .body-content .content-menu dl dd .menu-color-green{
+    color: #118850;
+}
+
+.body-con .body-middle .body-content .content-menu dl dd .menu-color-red{
+    color: #ff0000;
+}
+
+.body-con .body-middle .body-content .content-menu dl dd .menu-color-green:hover{
+    color: #118850;
+}
+
+.body-con .body-middle .body-content .content-menu dl dd .menu-color-red:hover{
+    color: #ff0000;
+}
+
+.body-con .body-middle .body-content .content-menu dl dd a:hover{
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.body-con .body-middle .body-content .content-menu dl dd .guomei-icon{
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    background: url("tupian/bubble.png") no-repeat;
+    font-size: 13px;
+    text-align: center;
+    text-indent: 3px;
+    color: #ff0000;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -33px;
+    margin-left: 60px;
+    line-height: 15px;
+}
+
