@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 600px;
+    min-width: 1000px;
+}
+
+.headlink{
+    float: right;
+    margin: 20px 15px;
+    font-size: 13px;
+    width: 410px;
+}
+
+.headlink a:hover{
+    color: #317ef3;
+}
+
+.text:hover{
+    border: 1px solid #666666;
+}
+
+.search:hover{
+    border: 1px solid #3a8cf3;
+    background-color: #3a8cf3;
+}
+
+.product:hover a{
+    display: block;
+}
+
+.link{
+    color: black;
+    margin-right: 15px;
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.link1{
+    color: black;
+    margin-right: 15px;
+    line-height: 24px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.link2{
+    margin-right: 10px;
+    color: #0000cc;
+}
+
+.link3{
+    color: #666;
+    margin-right: 1px;
+}
+
+.link4{
+    color: black;
+    margin-right: 15px;
+    line-height: 24px;
+    font-size: 13px;
+    text-decoration: underline;
+    position: relative;
+}
+
+.link5{
+    color: black;
+    margin-right: 15px;
+    line-height: 65px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.link6{
+    color: black;
+    margin-right: 15px;
+    line-height: 65px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+a.link4{
+    position: relative;
+}
+
+a.link4 span{
+    display: none;
+    color: black;
+    text-align: center;
+}
+
+a.link4:hover span{
+    position: absolute;
+    display: block;
+    width: 70px;
+    background-color: white;
+    box-shadow: 1px 1px 6px #b6b6b6;
+    right: -20px;
+    top: 30px;
+    border: 1px solid #b6b6b6;
+}
+
+.product{
+    background-color: #317ef3;
+    color: white;
+    border: none;
+    width: 60px;
+    height: 23px;
+    cursor: pointer;
+    line-height: 23px;
+    text-align: center;
+    float: right;
+}
+
+span.product{
+    position: relative;
+}
+
+span.product p{
+    display: none;
+    text-align: right;
+}
+
+span.product:hover p{
+    position: absolute;
+    display: block;
+    width: 80px;
+    border: 1px solid #b6b6b6;
+    box-shadow:1px 1px 6px #b6b6b6;
+    right: -10px;
+    background-image: url("bdbri_icons_2e35e84b.png");
+}
+
+img{
+    width: 270px;
+    height: 129px;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    clear: right;
+    padding-top: 5px;
+}
+
+.value{
+    margin: 0px auto;
+    display: block;
+    width: 637px;
+}
+
+.text{
+    width: 524px;
+    height: 31px;
+    padding-left: 5px;
+    border: 1px solid #b6b6b6;
+}
+
+.search{
+    margin-left: -9px;
+    border: none;
+    width: 100px;
+    height: 38px;
+    background-color: #317ef3;
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.p1{
+    margin: 0 auto;
+    position: relative;
+    top: 280px;
+    font-size: 12px;
+    width: 250px;
+}
+
+.p2{
+    margin: 0 auto;
+    width: 330px;
+    position: relative;
+    top: 288px;
+    font-size: 12px;
+    color: #666;
+}
+
+.picture{
+    width: 14px;
+    height: 17px;
+    float: right;
+    padding-top: 0px;
+}
+

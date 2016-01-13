@@ -1,0 +1,88 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.beijing{
+    background-color: inherit;
+    width: 1352px;
+    height: 618px;
+}
+.tou{
+    width: 100%;
+    height: 50px;
+}
+.zhuti{
+    width: 100%;
+    height: 418px;
+}
+.weibu{
+    width: 100%;
+    height: 150px;
+}
+.lianjie{
+    float: right;
+    text-decoration: underline;
+    color: black;
+    margin-right: 25px;
+    margin-top: 27px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.lianjie1{
+    float: right;
+    color: black;
+    margin-right: 25px;
+    margin-top: 27px;
+    font-size: 13px;
+}
+.chanpin{
+    height: 25px;
+    font-size: 13px;
+    font-weight: 100px;
+    float: right;
+    margin-top: 20px;
+    background-color: #317ef3;
+    color: white;
+    border: none;
+}
+img{
+    width: 270px;
+    height: 129px;
+    margin: 20px 526px;
+}
+textarea{
+    margin: 6px 402px;
+    width: 40%;
+    height: 20px;
+}
+.text{
+    height: 28px;
+    margin: 0px 371px;
+    width: 40%;
+}
+.sousuo{
+    margin-left: -380px;
+    background-color: #317ef3;
+    width: 100px;
+    height: 34px;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+.p1{
+    margin: 25px 523px;
+}
+.wblianjie{
+    margin-right: 23px;
+    text-decoration: underline;
+    color: #0000cc;
+    font-size: 13px;
+}
+.p2{
+    margin: -12px 489px;
+    color: #666;
+    font-size: 13px;
+}
+.shengming{
+    color: #666666
+}
