@@ -1,0 +1,994 @@
+/*reset*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+:focus {
+    outline: 1;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*CSS样式*/
+
+
+/*容器*/
+.container{
+    width: 100%;
+    height: 700px;
+    min-width: 1028px;
+    background: url("../images/back.jpg") no-repeat ;
+    background-size: cover;
+    position: relative;
+}
+
+/*头部导航栏公共样式*/
+
+.container header nav{
+    height: 30px;
+    background: rgba(104, 142, 167, 0.35);
+}
+
+.container header nav li{
+    list-style: none;
+    float: left;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.container header nav a{
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.container header nav span{
+    color: #fff;
+    font-size: 13px;
+}
+
+/*头部左侧天气*/
+
+.container header nav .left{
+    float: left;
+    height: 30px;
+    width: 350px;
+    padding-left: 20px;
+}
+
+.container header nav .left .weather{
+    float: left;
+}
+
+.container header nav .left .weather li{
+    cursor: pointer;
+}
+
+.container header nav .left .weather li .good{
+    color: #1e88ff;
+    font-weight: 600;
+}
+
+.container header nav .left .weather .weather-icon{
+    background: url("../images/duoyun.png?__sprite") no-repeat;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+}
+
+.container header nav .left .left-link li{
+    margin-right: 20px;
+}
+
+.container header nav .left .left-link li a{
+    font-weight: normal;
+}
+
+/*天气预报*/
+
+.weather-forecast{
+    position: absolute;
+    width: 580px;
+    height: 240px;
+    left: 0;
+    top: 24px;
+    display: none;
+    z-index: 1;
+}
+
+.triangle{
+    width: 11px;
+    height: 6px;
+    background: url("../images/load_ext_spis_65c74648.png?__sprite") no-repeat 0 -90px;
+    margin-left: 85px;
+}
+
+.weather-forecast dl{
+    background-color: #fff;
+}
+
+.weather-forecast dl dt{
+    height: 35px;
+    background-color: #f2f2f2;
+}
+
+.weather-forecast dl dt .lightning{
+    display: inline-block;
+    width: 50px;
+    height: 35px;
+    background: url("../images/9.png?__sprite") no-repeat #ff9900 center;
+    float: left;
+}
+
+.weather-forecast dl dt .dt-a{
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    line-height: 35px;
+    text-indent: 20px;
+    font-weight: normal;
+}
+
+.weather-forecast dl .date{
+    height: 40px;
+    border-bottom: 1px solid #f2f2f2;
+    margin: 0 20px;
+}
+
+.weather-forecast dl .date .solar-calendar{
+    color: #666;
+    line-height: 40px;
+    cursor: default;
+}
+
+.weather-forecast dl .date .lunar-calendar{
+    color: #999;
+    line-height: 40px;
+    cursor: default;
+}
+
+.weather-forecast dl .date a{
+    color: #0079f4;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.weather-forecast dl .date .set-up{
+    color: #666;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 13px;
+    background: url("../images/load_ext_spis_65c74648.png?__sprite") no-repeat -36px -89px;
+    float: right;
+    cursor: pointer;
+}
+
+.weather-forecast dl .detailed{
+    margin: 10px 20px 0;
+    height: 145px;
+}
+
+.weather-forecast dl .detailed ul li{
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.weather-forecast dl .detailed ul .same-dey{
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+.weather-forecast dl .detailed ul li span{
+    display: block;
+    color: #666;
+    font-size: 12px;
+}
+
+.weather-forecast dl .detailed ul li p{
+    font-size: 12px;
+    color: #666;
+}
+
+.weather-forecast dl .date .set-up:hover{
+    background: url("../images/load_ext_spis_65c74648.png?__sprite") no-repeat -36px -122px;
+    color: #0079f5;
+}
+
+.weather-forecast dl .date a:hover{
+    text-decoration: underline;
+}
+
+/*右侧菜单/链接*/
+
+.container header nav .right{
+    float: right;
+    position: relative;
+}
+
+.container header nav .right ul li{
+    margin-right: 20px;
+}
+
+.container header nav .right ul .con a{
+    font-weight: normal;
+}
+
+.container header nav .right ul .con .box{
+    position: absolute;
+    /*right: 140px;*/
+    display: none;
+}
+
+.container header nav .right ul .con .box .height{
+    height: 120px!important;
+}
+
+.container header nav .right ul .con .box .posi{
+    margin-left: 22px;
+}
+
+.container header nav .right ul .con .box .menu{
+    background-color: #fff;
+    height: 150px;
+}
+
+.container header nav .right ul .con .box .menu a{
+    margin: 0;
+    width: 65px;
+    text-indent: 5px;
+    color: #333;
+    display: block;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.container header nav .right ul .con .box .menu a:hover{
+    color: #fff;
+    background-color: #38f;
+}
+
+.container header nav .right ul .product{
+    background-color: #398bfb;
+    color: #fff;
+    font-size: 13px;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    right: -20px;
+}
+
+.container header nav .right ul .product .drop-down{
+    position: absolute;
+    background-color: #fff;
+    height: 625px;
+    display: none;
+}
+
+.container header nav .right ul .product .drop-down li{
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.container header nav .right ul .product .drop-down li:hover{
+    text-decoration: underline;
+}
+
+.container header nav .right ul .product .drop-down a{
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.container header nav .right ul .product .drop-down li span{
+    display: block;
+    width: 80px;
+    text-align: center;
+    color: #333;
+}
+
+/*LOGO及搜索*/
+
+.logo-search{
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.logo-search .logo{
+    width: 270px;
+    margin: auto;
+}
+
+.logo-search .logo img{
+    width: 270px;
+}
+
+.logo-search .search{
+    width: 641px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.logo-search .search .search-text{
+    padding: 0 0 0 5px;
+    border: none;
+    width: 532px;
+    height: 40px;
+    float: left;
+    outline: none;
+}
+
+.logo-search .search .search-button{
+    width: 102px;
+    height: 40px;
+    outline: none;
+    font-size: 18px;
+}
+
+/*主要内容*/
+
+.body-con{
+    width: 900px;
+    margin: 20px auto 0;
+    height: 400px;
+    border: 1px solid #000;
+}
+/*导航*/
+.body-con .nav-con{
+    height: 39px;
+    border-bottom: 1px solid #5f9abe;
+}
+
+.body-con .nav-con .care{
+    float: left;
+    display: block;
+    line-height: 40px;
+    width: 125px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #a8a8a8;
+    opacity: 0.6;
+}
+
+.body-con .nav-con .care .care-icon{
+    background: url("../images/card_setts_e10ab978.png?__sprite") no-repeat -146px 0;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+
+.body-con .nav-con .nav{
+    float: left;
+}
+
+.nav span{
+    display: block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #a8a8a8;
+    opacity: 0.6;
+    float: left;
+}
+
+.nav .span-1{
+    background-color: #ffffff!important;
+    opacity: 0.2;
+}
+
+.bgcolor{
+    background-color: transparent!important;
+}
+
+.body-con .nav-con .fill{
+    background-color:  #a8a8a8;
+    opacity: 0.6;
+    float: left;
+    height: 40px;
+    width: 415px;
+}
+
+.body-con .nav-con .icon-box{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    float: left;
+    position: relative;
+    background-color:  #a8a8a8;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.body-con .nav-con .icon-box .icon{
+    display: block;
+    width: 20px;
+    height: 15px;
+    background: url("../images/card_setts_e10ab978.png?__sprite") no-repeat -120px -50px;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+/*我的关注内容栏*/
+
+.body-con .care-body{
+    height: 360px;
+    background:rgba(120,120,120,0.7);
+    position: relative;
+}
+
+.body-con .care-body nav{
+    margin: 10px 20px;
+    border-bottom: 1px solid #5f9abe;
+    height: 40px;
+    line-height: 40px;
+}
+
+.body-con .care-body nav .title-con{
+    float: left;
+    display: block;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.body-con .care-body nav .title-con .mine-icon{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 5px dashed transparent;
+    border-left: 5px solid #5b5b5b;
+}
+
+.body-con .care-body nav .care-nav-con{
+    float: right;
+}
+
+.body-con .care-body nav .care-nav-con span{
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.body-con .care-body nav .care-nav-con .usual:hover{
+    color: #07f;
+}
+
+.body-con .care-body nav .care-nav-con .pattern:hover{
+    color: #07f;
+}
+
+.body-con .care-body nav .care-nav-con .top{
+    color: #91979d;
+}
+
+.body-con .care-body nav .care-nav-con .pattern .pattern-icon{
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+    background: url("../images/mine_set_818172e0.png?__sprite") no-repeat -67px -13px;
+}
+
+.body-con .care-body .nav-st{
+    margin: 0 20px 0;
+    border-bottom: 1px solid #5f9abe;
+    height: 40px;
+    line-height: 40px;
+}
+
+.body-con .care-body .nav-st li{
+    list-style: none;
+    float: left;
+    width: 170px;
+    text-indent: 20px;
+}
+
+.body-con .care-body .nav-st li:hover{
+    background: rgba(236, 236, 236, 0.7);
+}
+
+.body-con .care-body .nav-st li a{
+    color: #333;
+    text-decoration: none;
+}
+
+.body-con .care-body .custom{
+    height: 40px;
+    line-height: 40px;
+    margin: 10px 20px;
+}
+
+.body-con .care-body .custom .custom-icon{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url("../images/mine_set_818172e0.png?__sprite") no-repeat 0 0;
+}
+
+/*推荐内容栏*/
+
+.body-con .news-body{
+    height: 360px;
+    background:rgba(120,120,120,0.7);
+    position: relative;
+}
+
+.body-con .news-body .img-box{
+    margin: 20px;
+    float: left;
+}
+
+.body-con .news-body .img-box .img-tit{
+    position: relative;
+}
+
+.body-con .news-body .img-box .img-tit img{
+    opacity: 0.5;
+}
+
+.body-con .news-body .img-box .img-tit .text-box{
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    left: 50%;
+    margin-left: -157px;
+}
+
+.body-con .news-body .img-box .img-tit .text-box h1 a{
+    font-size: 22px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.body-con .news-body .img-box .img-tit .text-box h1 a:hover{
+    text-decoration: underline;
+}
+
+.body-con .news-body .img-box .img-tit .text-box p{
+    font-size: 13px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+
+.body-con .news-body .img-box ul{
+    width: 532px;
+    height: 97px;
+    background: rgba(173, 203, 203, 0.7);
+}
+
+.body-con .news-body .img-box ul li{
+    float: left;
+    position: relative;
+    list-style: none;
+    line-height: 97px;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.body-con .news-body .img-box ul li a span {
+    position: absolute;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    color: #fff;
+    top: 71px;
+    font-size: 12px;
+    height: 20px;
+    width: 121px;
+    text-align: center;
+    line-height: 20px;
+}
+
+/*新闻总览*/
+
+.body-con .news-body .news-con{
+    margin: 20px;
+    float: left;
+    width: 285px;
+}
+
+.body-con .news-body .news-con .news-title{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.body-con .news-body .news-con .replacement{
+    float: right;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+.body-con .news-body .news-con .replacement .replacement-icon{
+    display: inline-block;
+    width: 17px;
+    height: 15px;
+    background: url("../images/news_7dd96f5d.png?__sprite") no-repeat -23px -24px;
+}
+
+.body-con .news-body .news-con ul{
+    margin-top: 15px;
+}
+
+.body-con .news-body .news-con ul li{
+    float: left;
+    line-height: 30px;
+    margin-left: 25px;
+    width: 115px;
+}
+
+.body-con .news-body .news-con ul li a{
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.body-con .news-body .news-con ul li a:hover{
+    color: #0079f4;
+    text-decoration: underline;
+}
+
+/*分割线*/
+
+.body-con .news-body .img-box .division div{
+    float: left;
+    width: 170px;
+    border-bottom: 1px solid #e2e2e2;
+    font-size: 12px;
+    text-align: center;
+    color: #999;
+}
+
+.body-con .news-body .img-box .division .divi-text{
+    border: none;
+    margin-top: -9px;
+}
+
+.body-con .news-body .img-box .division .divi-text span{
+    display: inline-block;
+    width: 12px;
+    height: 14px;
+    background: url("../images/news_7dd96f5d.png?__sprite") no-repeat -45px 0;
+}
+
+/*链接*/
+
+.body-con .link-body{
+    height: 360px;
+    background:rgba(120,120,120,0.7);
+    position: relative;
+}
+
+.body-con .link-body .link-box{
+    margin: 0 20px;
+}
+
+.body-con .link-body .link-box a{
+    float: left;
+    width: 128px;
+    margin: 10px 0 0 13px;
+    display: block;
+    background-color: #fff;
+    text-align: center;
+}
+
+.bottom{
+    height: 30px;
+    width: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background:rgba(0,0,0,0.3);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25px;
+}
+
+.bottom span{
+    display: block;
+    width: 22px;
+    height: 13px;
+    background: url("../images/card_setts_e10ab978.png?__sprite") no-repeat -114px -2px;
+    position: relative;
+    margin-top: 10px;
+    left: 50%;
+    margin-left: -11px;
+}
+
+/*购物*/
+
+.body-con .shop-body{
+    height: 360px;
+    background:rgba(120,120,120,0.7);
+    position: relative;
+}
+
+.body-con .shop-body ul{
+    margin: 0 20px;
+}
+
+.body-con .shop-body ul li{
+    list-style: none;
+    float: left;
+    position: relative;
+    margin: 15px 13px 0 0;
+}
+
+.body-con .shop-body ul li a{
+    color: #333;
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+
+.body-con .shop-body ul li a img{
+    width: 202px;
+}
+
+.body-con .shop-body ul li a span{
+    position: absolute;
+    display: block;
+    width: 202px;
+    height: 20px;
+    font-size: 13px;
+    bottom: 1px;
+    line-height: 20px;
+    text-indent: 20px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    display: none;
+}
+
+.body-con .shop-body ul li div{
+    width: 202px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.body-con .shop-body ul li div a{
+    float: left;
+    font-size: 15px;
+}
+
+.body-con .shop-body ul li div a:hover{
+    color: #077fff;
+    text-decoration: underline;
+}
+
+.body-con .shop-body ul li div span{
+    float: right;
+    font-size: 17px;
+    margin-right: 10px;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/*视频*/
+
+.body-con .video-body{
+    height: 360px;
+    background:rgba(120,120,120,0.7);
+    position: relative;
+}
+
+.body-con .video-body ul{
+    margin: 0 20px;
+}
+
+.body-con .video-body ul li{
+    list-style: none;
+    float: left;
+    position: relative;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.body-con .video-body ul li .img-icon{
+    display: block;
+    width: 42px;
+    height: 42px;
+    background: url("../images/video_corner_bce72425.png?__sprite") no-repeat -42px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.body-con .video-body ul li .date{
+    position: absolute;
+    right: 0;
+    bottom: 55px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.body-con .video-body ul li .operation{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    display: none;
+}
+
+.body-con .video-body ul li .operation span{
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.body-con .video-body ul li .operation .follow{
+    background: url("../images/vicon_312b5ba6.png?__sprite") no-repeat;
+}
+
+.body-con .video-body ul li .operation .del{
+    background: url("../images/vicon_312b5ba6.png?__sprite") no-repeat -46px 0;
+}
+
+.body-con .video-body ul li .text{
+    height: 50px;
+    background: rgba(216, 216, 216, 0.7);
+    margin-top: -2px;
+}
+
+.body-con .video-body ul li .text a{
+     text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    display: block;
+    padding: 5px 0 0 5px;
+
+}
+
+.body-con .video-body ul li .text a:hover{
+    color: #07f;
+    text-decoration: underline;
+}
+
+.body-con .video-body ul li .text span{
+    display: block;
+    position: absolute;
+    height: 12px;
+    text-indent: 70px;
+    line-height: 3px;
+    bottom: 5px;
+    color: #999;
+    font-size: 14px;
+}
+
+.body-con .video-body ul li .text .stars-grey{
+    width: 46px;
+    background: url("../images/star_592adb7e.png?__sprite") 0 -13px;
+    z-index: 1;
+}
+
+.body-con .video-body ul li .text .stars-withe{
+    width: 65px;
+    background: url("../images/star_592adb7e.png?__sprite");
+}
+
+.body-con .video-body ul li .text a span{
+    width: 190px;
+    position: relative;
+    line-height: 20px;
+    bottom: 0;
+    font-size: 13px;
+    text-indent: 0;
+    height: 40px;
+    color: #333;
+}
+
+.body-con .video-body ul li .text a span:hover{
+    color: #07f;
+}
+
+.body-con .nav-click .none{
+    display: none;
+}
