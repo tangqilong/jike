@@ -1,0 +1,52 @@
+<% include ./head %>
+<!--以上引入ejs头部模版-->
+		<title>BaiduNews后台Login</title>
+		<link rel="stylesheet" type="text/css" href="/css/admin/login.css" />
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="header">
+			<div class="text-center">
+				<h1>
+					<i class="icon-leaf green"></i>
+					<span class="orange">百度新闻<small>后台管理系统</small></span>
+				</h1>
+			</div>
+		</div>
+		<!--登录-->
+		<div class="login-box">
+			<div class="login-body">
+				<h4>
+					<i class="icon-coffee green"></i>
+					<span class="blue">请输入您的账号</span>
+				</h4>
+				<!--表单开始-->
+				<form id="login-form" action="/admin/userLogin" method="post">
+
+					<div class="input-group input-bar">
+						<input class="form-control" type="text" name="username" id="username" placeholder="Username" required />
+						<i class="icon-user pull-right"></i>
+					</div>
+					<div class="input-group input-bar">
+						<input class="form-control " type="password" name="password" id="password" placeholder="Password" autocomplete="off" required/>
+						<i class="icon-lock pull-right"></i>
+					</div>
+
+					<div class="submit-area">
+						<div class="checkbox">
+							<label class="text-danger errlogin invisible" >用户名或密码不正确</label>
+							<button id="submit-btn" type="submit" class="btn btn-sm btn-primary pull-right">
+								<i class="icon-key"></i>&nbsp;
+								<span>确定</span>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="/js/jquery.js"></script>
+        <script src="/js/admin/login.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

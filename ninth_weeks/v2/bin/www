@@ -1,0 +1,15 @@
+//启动文件
+//模块依赖
+var app = require('../app');
+var http = require('http');
+
+
+//端口设置
+var port = '3000';
+app.set('port', port);
+
+//服务器
+var server = http.createServer(app);
+server.listen(port);
+
+console.log('-------------localhost:3000-----localhost:3000/admin----name:1----password:1-------------');

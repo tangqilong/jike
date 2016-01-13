@@ -1,0 +1,63 @@
+body {
+	font-family: Arial, sans-serif;
+	background: #1D2024;
+}
+
+/*自适应登录框*/
+@media only screen and (min-width: 480px) {
+	.login-box {
+		width: 365px;
+		border: 5px solid #394557;
+	}
+}
+
+
+/*form表单*/
+.login-box {
+	background: #F7F7F7;
+	height: 265px;
+	min-width: 345px;
+	margin: 0 auto;
+}
+
+.login-body {
+	padding: 30px 35px 15px 35px;
+	box-shadow: 0 6px 6px -6px #737373;
+	position: relative;
+}
+
+.input-bar {
+	width: 100%;
+}
+.input-bar input {
+	border-radius: 0;
+	margin: 10px 0;
+}
+.input-bar input:hover {
+	border-color: #B5B5B5;
+}
+.input-bar input:focus {
+	border-color: #F59942;
+	box-shadow: none;
+}
+.input-bar input:focus+i {
+	color: #478fca;
+}
+.input-bar i {
+	position: relative;
+	top: -25px;
+	left: -8px;
+	color: #909090;
+	z-index: 2;
+}
+
+.login-box h4 {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #D5E3EF;
+}
+
+#submit-btn {
+	border-radius: 0;
+	width: 100px;
+	border: 5px solid #337AB7;
+}
